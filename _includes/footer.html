@@ -62,21 +62,7 @@
                         <h4 class="title">Recent News</h4>
                     </div>
                     <div class="footer-items-3">
-                      {% for post in site.posts limit: "2" %}
-                        <div class="News-item d-flex mb-3">
-                            {% if post.post_image %}
-                            <div class="News-thumb">
-                                <img class="img-fluid" src="{{post.post_image}}" alt="{{post.title}}"/>
-                            </div>
-                            {% endif %}
-                            <div class="News-content">
-                                <a href="{{post.url}}">
-                                    <h5 class="title">{{post.title | truncatewords: "8"}}</h5>
-                                </a>
-                                <span>{{post.date | date_to_long_string}}</span>
-                            </div>
-                        </div>
-                       {% endfor %}
+                     
                     </div>
                 </div>
             </div>
