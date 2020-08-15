@@ -46,7 +46,7 @@
 			border-radius: 50%;
 			font-size: 30px;
 			color: $white;
-			background: #3b7eff;
+			background: #298ecc;
 			@include transition(0.3s);
 		}
 		& .title{
@@ -63,7 +63,7 @@
 		}
 		& a{
 			font-size: 15px;
-			color: #3b7eff;
+			color: #298ecc;
 			font-weight: 600;
 			margin-top: 24px;
 			@include transition(0.3s);
@@ -73,33 +73,33 @@
 		}
 		&.item-2{
 			& > i{
-				background: #f86e03;
+				background: #803fff;
 			}
 			& a{
-				color: #f86e03;
+				color: #803fff;
 			}
 		}
 		&.item-3{
 			& > i{
-				background: #0154f7;
+				background: #44afff;
 			}
 			& a{
-				color: #0154f7;
+				color: #44afff;
 			}
 		}
 		&.item-4{
 			& > i{
-				background: #ef5b51;
+				background: #f9c56f;
 			}
 			& a{
-				color: #ef5b51;
+				color: #f9c56f;
 			}
 		}
 		&:hover{
-			background: #3B7EFF;
+			background: #298ecc;
 			& > i{
 				background: $white;
-				color: #3B7EFF;
+				color: #298ecc;
 			}
 			& .title{
 				color: $white;
@@ -108,21 +108,21 @@
 				color: $white;
 			}
 			&.item-2{
-				background: #f86e03;
+				background: #803fff;
 				& > i{
-					color: #f86e03;
+					color: #803fff;
 				}
 			}
 			&.item-3{
-				background: #0154f7;
+				background: #44afff;
 				& > i{
-					color: #0154f7;
+					color: #44afff;
 				}
 			}
 			&.item-4{
-				background: #ef5b51;
+				background: #f9c56f;
 				& > i{
-					color: #ef5b51;
+					color: #f9c56f;
 				}
 			}
 		}
@@ -182,7 +182,7 @@
 				width: 60px;
 				text-align: center;
 				border-radius: 50%;
-				background: #3b7eff;
+				background: #298ecc;
 				line-height: 60px;
 				font-size: 24px;
 				color: $white;
@@ -211,30 +211,30 @@
 		&.item-2{
 			& .featires-content{
 				& > i{
-					background: #f86e03;
+					background: #803fff;
 				}
 				& a{
-					color: #f86e03;
+					color: #803fff;
 				}
 			}
 		}
 		&.item-3{
 			& .featires-content{
 				& > i{
-					background: #0154f7;
+					background: #44afff;
 				}
 				& a{
-					color: #0154f7;
+					color: #44afff;
 				}
 			}
 		}
 		&.item-4{
 			& .featires-content{
 				& > i{
-					background: #ef5b51;
+					background: #f9c56f;
 				}
 				& a{
-					color: #ef5b51;
+					color: #f9c56f;
 				}
 			}
 		}
@@ -245,9 +245,9 @@
 				}
 			}
 			& .featires-content{
-				background: #3b7eff;
+				background: #298ecc;
 				& > i{
-					color: #3b7eff;
+					color: #298ecc;
 					background: $white;
 				}
 				& .title{
@@ -259,25 +259,25 @@
 			}
 			&.item-2{
 				& .featires-content{
-					background: #f86e03;
+					background: #803fff;
 					& i{
-						color: #f86e03;
+						color: #803fff;
 					}
 				}
 			}
 			&.item-3{
 				& .featires-content{
-					background: #0154f7;
+					background: #44afff;
 					& i{
-						color: #0154f7;
+						color: #44afff;
 					}
 				}
 			}
 			&.item-4{
 				& .featires-content{
-					background: #ef5b51;
+					background: #f9c56f;
 					& i{
-						color: #ef5b51;
+						color: #f9c56f;
 					}
 				}
 			}

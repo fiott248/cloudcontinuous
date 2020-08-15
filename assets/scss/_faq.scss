@@ -29,7 +29,7 @@
 		}
 	}
 	& .faq-content{
-		background: #ef5b51;
+		background: #f9c56f;
 		padding: 40px 20px 45px;
 		@media #{$md} {
 			padding: 40px 50px 45px;
@@ -152,7 +152,7 @@
 					width: 100%;
 					color: $white;
 					position: relative;
-					background: #3b7eff;
+					background: #298ecc;
 					@media #{$lg} {
 						padding: 0 0 0 40px;
 						font-size: 18px;
@@ -202,7 +202,7 @@
 			}
 			& .card-body{
 				padding: 0 30px 20px 40px !important;
-				background: #3b7eff;
+				background: #298ecc;
 				@media #{$xs} {
 					padding: 0 30px 20px 26px !important;
 				}
