@@ -5,8 +5,6 @@
 - text: Our Services
   url: /services
   submenu:
-  - text: FAQ
-    url: /faq
   - text: Our Team
     url: /team
   - text: Features
