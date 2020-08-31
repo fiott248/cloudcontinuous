@@ -29,7 +29,10 @@ plugins:
   - jekyll-feed
   - jekyll-paginate-v2
   - jekyll-archives
-
+  - jekyll-coffeescript
+sass:
+    sass_dir: assets/scss
+    style: compressed
 
 ########################################################
 # Site configuration for the Jekyll 3 Pagination Gem
