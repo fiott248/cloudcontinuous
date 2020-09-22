@@ -4,11 +4,6 @@
   url: /
 - text: Our Services
   url: /services
-  submenu:
-  - text: Our Team
-    url: /team
-  - text: Features
-    url: /features 
 - text: Contact
   url: /contact
 - text: About Us

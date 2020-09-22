@@ -1,7 +1,7 @@
 title: "Devops and Devlopment Services"
 email: ""
 description: >- # this means to ignore newlines until "baseurl:"
- Trade - Multipurpose Business & Corporate Jekyll Template Jekyll Theme For Mobile Apps Download Landing Page And Blogging.
+ DevOps & Development strategies & Consulting Services. Speed up your development process and save money by implemeting solutions for your busniess using latest technologies to improve efficiency
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://cloudcontinous.com" # the base hostname & protocol for your site, e.g. http://example.com or  https://tradejk.netlify.com
 facebook_url: ""
@@ -13,7 +13,7 @@ instagram_url: ""
 youtube_url: ""
 logo: "/assets/images/cc-logo-white-250-63.png"
 logo_2: "/assets/images/cc-logo-blue-400-100.png"
-mailchimp_list: "https://themeix.us16.list-manage.com/subscribe/post?u=307862c135e4548eecf86f389&amp;id=342411fb35"
+mailchimp_list: ""
 
 permalink: "/:title"
 
