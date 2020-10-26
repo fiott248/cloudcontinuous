@@ -1,0 +1,60 @@
+Cloud Migration
+Cloud Platform Build
+Containerisation
+Continuous Integration & Delivery Pipelines
+Infrastrcuture Versioning
+
+Cost cutting Cloud Optimization
+Big Data Warehouse
+    - Presto
+    - hadoop
+    - Spark
+    - Hive
+    - aws EMR, Aurora, Athena
+
+
+
+Consulting
+    - Hashicorp
+        - Infrastrcuture Versioning & Automation (Automation) (Cloud Infrastrcuture)
+        - Network Automation (Automation)
+        - hybrid Multi Cloud Provisioning (Cloud Infrastrcuture) 
+        - Infrastrcuture as Code (Cloud Infrastrcuture)
+        - Security Automation (Automation)
+        - API Integration Infrastrcuture (Automation) (Cloud Infrastrcuture)
+
+    - Cloud
+        - Cloud Migration (Cloud Infrastrcuture) 
+        - Cost Optimization (Cloud Infrastrcuture) 
+        - High Availablity & Scalabilty Optimization (Cloud Infrastrcuture) (serverless)
+        - Serverless Functions (Cloud Infrastrcuture) (serverless)
+        - Application Portoablity (Devops)
+        - Elastic Services (Cloud Infrastrcuture) (serverless)
+        - Containerisation (Devops)
+        - Big Data (big Data) (devops) (serverless)
+
+    - Integration & Delivery Pipelines 
+        - Infrastrcuture as Code (Automation)
+        - Pipeline as Code (Automation)
+        - Development Toolchain (Devops)
+        - Modern branching (Devops)
+        - Gethering Modeling (Devops)
+        - Application & Infrastrcuture Monitoring (devops)
+        - Immutable Infrastrcuture
+
+
+
+some of Services
+    - Devops
+        - Containerisation
+        - Development Toolchain
+        - Modern branching
+        - Gethering Modeling
+        - Application & Infrastrcuture Monitoring
+        - Big Data Warehouse
+        - Application portability
+        - Immutable Infrastrcuture
+
+    - Cloud Infrastrcuture
+    - Serverless
+    - Automation

@@ -3,7 +3,16 @@
 - text: Home
   url: /
 - text: Our Services
-  url: /services
+  url: /
+  submenu:
+    - text: Serverless
+      url: /
+    - text: Security
+      url: /
+    - text: Devops
+      url: /devops
+    - text: Cloud
+      url: /
 - text: Contact
   url: /contact
 - text: About Us

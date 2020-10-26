@@ -184,7 +184,7 @@
 			background-position: 60%;
 		}
 		& .banner-bg{
-			height: 640px;
+			height: 420px;
 			display: -webkit-flex;
 			display: -moz-flex;
 			display: -ms-flex;
@@ -195,7 +195,7 @@
 				& .title{
 					font-size: 65px;
 					font-weight: 700;
-					color: $black;
+					color: $white;
 					padding-bottom: 20px;
 					@media #{$xs} {
 						font-size: 36px;
@@ -231,7 +231,8 @@
 		&::before{
 			transform: skewX(0deg);
 			width: 100%;
-			background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0) 100%);
+			 //background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0) 100%);
+			background: linear-gradient(90deg,  rgba(255,255,255, 0.5)0%, rgba(128,63,255, 0.3) 100%);
 			left: 0;
 		}
 		& .banner-shape-1{

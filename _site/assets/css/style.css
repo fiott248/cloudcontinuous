@@ -1149,7 +1149,7 @@ p {
   }
 }
 .banner-area.page-title .banner-bg {
-  height: 640px;
+  height: 420px;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -1160,7 +1160,7 @@ p {
 .banner-area.page-title .banner-bg .page-title-content .title {
   font-size: 65px;
   font-weight: 700;
-  color: #222;
+  color: #fff;
   padding-bottom: 20px;
 }
 @media (max-width: 767px) {
@@ -1196,7 +1196,7 @@ p {
 .banner-area.page-title::before {
   transform: skewX(0deg);
   width: 100%;
-  background: linear-gradient(90deg, white 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0%, rgba(128, 63, 255, 0.3) 100%);
   left: 0;
 }
 @media (max-width: 767px) {
