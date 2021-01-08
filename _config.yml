@@ -3,7 +3,7 @@ email: "tech@cloudcontinuous.com"
 description: >- # this means to ignore newlines until "baseurl:"
  DevOps & Development strategies & Consulting Services. Speed up your development process and save money by implemeting solutions for your busniess using latest technologies to improve efficiency
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://cloudcontinous.com" # the base hostname & protocol for your site, e.g. http://example.com or  https://tradejk.netlify.com
+url: "https://cloudcontinuous.com" # the base hostname & protocol for your site, e.g. http://example.com or  https://tradejk.netlify.com
 facebook_url: ""
 twitter_url: ""
 github_url:  ""
