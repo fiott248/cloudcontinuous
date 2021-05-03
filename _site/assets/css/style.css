@@ -4192,6 +4192,12 @@ p {
   font-size: 14px;
   color: #aeb7ca;
 }
+.footer-area .footer-widget .footer-items-3 p {
+  color: #aeb7ca;
+  font-size: 14px;
+  line-height: 26px;
+  padding-bottom: 35px;
+}
 .footer-area .footer-copyright {
   height: 85px;
   display: -webkit-flex;
