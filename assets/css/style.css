@@ -7571,4 +7571,204 @@ p {
   font-size: 100px;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*service table */
+@media (min-width: 768px) .section__bottom-light {
+	margin-bottom: 144px;
+}
+
+.section__bottom-light {
+	margin-bottom: 55px;
+}
+
+.why__header {
+	margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) .why .comparison {
+	font-size: 18px;
+}
+
+.why .comparison {
+	margin-bottom: 4rem;
+	text-align: center;
+	font-size: 16px;
+}
+
+.why .comparison__col {
+	position: relative;
+	z-index: -1;
+	margin: 0 auto 1rem;
+	max-width: 280px;
+}
+
+.why .comparison__cell:first-child {
+	height: 100px;
+}
+
+.why .comparison__col--names .comparison__cell {
+	-ms-flex-align: end;
+	align-items: flex-end;
+	padding-right: 3rem;
+}
+
+.why .comparison__cell {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-flow: column nowrap;
+	flex-flow: column nowrap;
+	-ms-flex-pack: center;
+	justify-content: center;
+	padding: 0 1rem;
+	height: 80px;
+}
+
+.why .comparison__cell:nth-child(2n) {
+	background-color: #e5e5e5;
+}
+
+.why .comparison__col--names .comparison__cell {
+	-ms-flex-align: end;
+	align-items: flex-end;
+	padding-right: 3rem;
+}
+
+.why .comparison__cell {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-flow: column nowrap;
+	flex-flow: column nowrap;
+	-ms-flex-pack: center;
+	justify-content: center;
+	padding: 0 1rem;
+	height: 80px;
+}
+
+.why .comparison__row-title {
+	margin-right: 1rem;
+	text-align: right;
+	font-size: 18px;
+}
+
+.why .comparison__col--geekforce .comparison__cell:nth-child(2n) {
+    margin: -3px 0;
+    height: 86px;
+    background-color: hsla(0,0%,90%,.2);
+}
+
+.why .comparison__cell:nth-child(2n) {
+    background-color: #e5e5e5;
+}
+.why .comparison__col--geekforce .comparison__cell {
+    font-weight: 500;
+}
+.why .comparison__cell {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0 1rem;
+    height: 80px;
+}
+
+@media (min-width: 1200px)
+.why .comparison__col--geekforce .comparison__cell-title {
+    display: none;
+}
+
+@media (min-width: 576px)
+.why .comparison__col--geekforce .comparison__cell-title {
+    display: block;
+}
+@media (min-width: 576px)
+.why .comparison__cell-title {
+    display: none;
+}
+.why .comparison__cell-title {
+    display: block;
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+.why .comparison__col--geekforce .comparison__cell {
+    font-weight: 500;
+}
+
+.why .comparison__cell {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0 1rem;
+    height: 80px;
+}
+
+@media (min-width: 1200px) .why .comparison__col--geekforce {
+	margin-right: -1rem;
+	margin-left: -1rem;
+}
+
+@media (min-width: 576px) .why .comparison__col--geekforce {
+	margin-right: -1.5rem;
+	margin-left: -1.5rem;
+}
+
+.why .comparison__col--geekforce {
+	z-index: 1;
+	overflow: hidden;
+	border-radius: 10px;
+	background: -webkit-linear-gradient(215deg, #cb099c, #a012ca);
+	background: -o-linear-gradient(215deg, #cb099c, #a012ca);
+	background: linear-gradient(-125deg, #cb099c, #a012ca);
+	-webkit-box-shadow: 0 20px 70px -10px rgb(51 51 51 / 50%), 0 50px 100px 0 rgb(51 51 51 / 10%);
+	box-shadow: 0 20px 70px -10px rgb(51 51 51 / 50%), 0 50px 100px 0 rgb(51 51 51 / 10%);
+	color: #fff;
+	font-size: 18px;
+}
+
+.why .comparison__col {
+	position: relative;
+	z-index: -1;
+	margin: 0 auto 1rem;
+	max-width: 280px;
+}
+
+.why .comparison__cell:first-child {
+	height: 100px;
+}
+
+.why .comparison__col--geekforce .comparison__cell {
+	font-weight: 500;
+}
+
+.why .comparison__cell {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-flow: column nowrap;
+	flex-flow: column nowrap;
+	-ms-flex-pack: center;
+	justify-content: center;
+	padding: 0 1rem;
+	height: 80px;
+}
+.why__info {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
