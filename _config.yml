@@ -1,9 +1,9 @@
 title: "Devops and Devlopment Services"
-email: ""
+email: "tech@cloudcontinuous.com"
 description: >- # this means to ignore newlines until "baseurl:"
- Trade - Multipurpose Business & Corporate Jekyll Template Jekyll Theme For Mobile Apps Download Landing Page And Blogging.
+ DevOps & Development strategies & Consulting Services. Speed up your development process and save money by implemeting solutions for your busniess using latest technologies to improve efficiency
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://cloudcontinous.com" # the base hostname & protocol for your site, e.g. http://example.com or  https://tradejk.netlify.com
+url: "https://cloudcontinuous.com" # the base hostname & protocol for your site, e.g. http://example.com or  https://tradejk.netlify.com
 facebook_url: ""
 twitter_url: ""
 github_url:  ""
@@ -13,11 +13,11 @@ instagram_url: ""
 youtube_url: ""
 logo: "/assets/images/cc-logo-white-250-63.png"
 logo_2: "/assets/images/cc-logo-blue-400-100.png"
-mailchimp_list: "https://themeix.us16.list-manage.com/subscribe/post?u=307862c135e4548eecf86f389&amp;id=342411fb35"
+mailchimp_list: ""
 
 permalink: "/:title"
 
-copyright_text: "Copyright ©2020. All Rights Reserved"
+copyright_text: "Copyright ©2021. All Rights Reserved"
 phone_number: "+ 356 79796036"
 cover_image: "/assets/images/page-title-bg.jpg"
 
@@ -29,7 +29,11 @@ plugins:
   - jekyll-feed
   - jekyll-paginate-v2
   - jekyll-archives
-
+  - jekyll-coffeescript
+  - jekyll-seo-tag
+sass:
+    sass_dir: assets/scss
+    style: compressed
 
 ########################################################
 # Site configuration for the Jekyll 3 Pagination Gem

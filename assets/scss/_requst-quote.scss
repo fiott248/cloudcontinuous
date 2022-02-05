@@ -83,7 +83,7 @@
 		height: 200px;
 		& .newaletter-content{
 			width: 370px;
-			background: #ef5b51;
+			background: #f9c56f;
 			height: 200px;
             @media #{$md} {
                 width: 200px;
@@ -186,6 +186,7 @@
 
 
 .brand-area{
+	padding-top: 128px;
 	padding-bottom: 128px;
 	& .brand-item{
 		& img{

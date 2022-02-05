@@ -3,15 +3,15 @@
 - text: Home
   url: /
 - text: Our Services
-  url: /services
+  url: /
   submenu:
-  - text: FAQ
-    url: /faq
-  - text: Our Team
-    url: /team
-  - text: Features
-    url: /features 
+    - text: Serverless
+      url: /
+    - text: Security
+      url: /
+    - text: Devops
+      url: /devops
+    - text: Cloud
+      url: /
 - text: Contact
   url: /contact
-- text: About Us
-  url: /about
