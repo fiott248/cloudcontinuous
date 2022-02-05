@@ -7577,6 +7577,7 @@ p {
 }
 
 .section__bottom-light {
+  padding-top: 128px;
 	margin-bottom: 55px;
 }
 
@@ -7653,7 +7654,7 @@ p {
 	font-size: 18px;
 }
 
-.why .comparison__col--geekforce .comparison__cell:nth-child(2n) {
+.why .comparison__col--cc .comparison__cell:nth-child(2n) {
     margin: -3px 0;
     height: 86px;
     background-color: hsla(0,0%,90%,.2);
@@ -7662,7 +7663,7 @@ p {
 .why .comparison__cell:nth-child(2n) {
     background-color: #e5e5e5;
 }
-.why .comparison__col--geekforce .comparison__cell {
+.why .comparison__col--cc .comparison__cell {
     font-weight: 500;
 }
 .why .comparison__cell {
@@ -7679,12 +7680,12 @@ p {
 }
 
 @media (min-width: 1200px)
-.why .comparison__col--geekforce .comparison__cell-title {
+.why .comparison__col--cc .comparison__cell-title {
     display: none;
 }
 
 @media (min-width: 576px)
-.why .comparison__col--geekforce .comparison__cell-title {
+.why .comparison__col--cc .comparison__cell-title {
     display: block;
 }
 @media (min-width: 576px)
@@ -7697,7 +7698,7 @@ p {
     font-size: 12px;
 }
 
-.why .comparison__col--geekforce .comparison__cell {
+.why .comparison__col--cc .comparison__cell {
     font-weight: 500;
 }
 
@@ -7714,23 +7715,23 @@ p {
     height: 80px;
 }
 
-@media (min-width: 1200px) .why .comparison__col--geekforce {
+@media (min-width: 1200px) .why .comparison__col--cc {
 	margin-right: -1rem;
 	margin-left: -1rem;
 }
 
-@media (min-width: 576px) .why .comparison__col--geekforce {
+@media (min-width: 576px) .why .comparison__col--cc {
 	margin-right: -1.5rem;
 	margin-left: -1.5rem;
 }
 
-.why .comparison__col--geekforce {
+.why .comparison__col--cc {
 	z-index: 1;
 	overflow: hidden;
 	border-radius: 10px;
-	background: -webkit-linear-gradient(215deg, #cb099c, #a012ca);
-	background: -o-linear-gradient(215deg, #cb099c, #a012ca);
-	background: linear-gradient(-125deg, #cb099c, #a012ca);
+	background: -webkit-linear-gradient(215deg, #45affd, #2a8dcd);
+	background: -o-linear-gradient(215deg, #45affd, #2a8dcd);
+	background: linear-gradient(-125deg, #45affd, #2a8dcd);
 	-webkit-box-shadow: 0 20px 70px -10px rgb(51 51 51 / 50%), 0 50px 100px 0 rgb(51 51 51 / 10%);
 	box-shadow: 0 20px 70px -10px rgb(51 51 51 / 50%), 0 50px 100px 0 rgb(51 51 51 / 10%);
 	color: #fff;
@@ -7748,7 +7749,7 @@ p {
 	height: 100px;
 }
 
-.why .comparison__col--geekforce .comparison__cell {
+.why .comparison__col--cc .comparison__cell {
 	font-weight: 500;
 }
 
