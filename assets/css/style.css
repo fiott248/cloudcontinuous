@@ -7810,13 +7810,9 @@ p {
 }
 
 .features .row:first-child .features__item:nth-child(1) .feature {
-    background: -webkit-linear-gradient(
-215deg
-,#b70dae,#a910bf);
-    background: -o-linear-gradient(215deg,#b70dae,#a910bf);
-    background: linear-gradient(
--125deg
-,#b70dae,#a910bf);
+    background: -webkit-linear-gradient(215deg,#298ecc,#298ecc);
+    background: -o-linear-gradient(215deg,#298ecc,#298ecc);
+    background: linear-gradient(-125deg,#298ecc,#298ecc);
 }
 a.feature {
     text-decoration: none;
@@ -7836,13 +7832,9 @@ a.feature {
     margin-bottom: 30px;
     padding: 3rem 2rem;
     border-radius: 0.625rem;
-    background: -webkit-linear-gradient(
-215deg
-,#b30eb5,#ab0eb6);
-    background: -o-linear-gradient(215deg,#b30eb5,#ab0eb6);
-    background: linear-gradient(
--125deg
-,#b30eb5,#ab0eb6);
+    background: -webkit-linear-gradient(215deg,#298ecc,#298ecc);
+    background: -o-linear-gradient(215deg,#298ecc,#298ecc);
+    background: linear-gradient(-125deg,#298ecc,#298ecc);
     -webkit-transform: perspective(1000px);
     transform: perspective(1000px);
     -webkit-backface-visibility: hidden;
