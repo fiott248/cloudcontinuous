@@ -4076,6 +4076,9 @@ p {
 }
 .brand-area .brand-item img {
   display: inline-block;
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
 }
 .brand-area.about-brand {
   background: #eef3f9;
@@ -7810,9 +7813,9 @@ p {
 }
 
 .features .row:first-child .features__item:nth-child(1) .feature {
-    background: -webkit-linear-gradient(215deg,#298ecc,#298ecc);
-    background: -o-linear-gradient(215deg,#298ecc,#298ecc);
-    background: linear-gradient(-125deg,#298ecc,#298ecc);
+    background: -webkit-linear-gradient(215deg,#45affd,#298ecc);
+    background: -o-linear-gradient(215deg,#45affd,#298ecc);
+    background: linear-gradient(-125deg,#45affd,#298ecc);
 }
 a.feature {
     text-decoration: none;
@@ -7832,9 +7835,9 @@ a.feature {
     margin-bottom: 30px;
     padding: 3rem 2rem;
     border-radius: 0.625rem;
-    background: -webkit-linear-gradient(215deg,#298ecc,#298ecc);
-    background: -o-linear-gradient(215deg,#298ecc,#298ecc);
-    background: linear-gradient(-125deg,#298ecc,#298ecc);
+    background: -webkit-linear-gradient(215deg,#45affd,#298ecc);
+    background: -o-linear-gradient(215deg,#45affd,#298ecc);
+    background: linear-gradient(-125deg,#45affd,#298ecc);
     -webkit-transform: perspective(1000px);
     transform: perspective(1000px);
     -webkit-backface-visibility: hidden;
