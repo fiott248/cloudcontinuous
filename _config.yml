@@ -1,7 +1,7 @@
-title: "Devops and Devlopment Services"
+title: "Cloud engineering and Development Services"
 email: "tech@cloudcontinuous.com"
 description: >- # this means to ignore newlines until "baseurl:"
- DevOps & Development strategies & Consulting Services. Speed up your development process and save money by implemeting solutions for your busniess using latest technologies to improve efficiency
+ Cloud engineering & Development strategies & Consulting Services. Increase your business value distribution by utilizing cloud and development services. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://cloudcontinuous.com" # the base hostname & protocol for your site, e.g. http://example.com or  https://tradejk.netlify.com
 facebook_url: ""
