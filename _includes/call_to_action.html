@@ -1,5 +1,6 @@
     <!--====== REQUEST QUOTE PART START ======-->
-
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
     <section class="requst-quote-area bg_cover pt-115" style="background-image: url({{relative_url}}/assets/images/requst-quote-bg.jpg);">
         <div class="container">
             <div class="row justify-content-center">
@@ -7,7 +8,7 @@
                     <div class="requst-content text-center">
                         <span>We are the software agency for who are ready to launch amazing products</span>
                         <h2 class="title">Get the Value</h2>
-                        <a class="main-btn-2 main-btn" href="contact.html">Reach Out</a>
+                        <a class="main-btn-2 main-btn" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/cloudcontinuous'});return false;">Schedule a time</a>
                     </div>
                 </div>
             </div>
