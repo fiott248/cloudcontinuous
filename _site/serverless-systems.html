@@ -109,6 +109,28 @@
                                     
                                 </li>
                                 
+                                
+
+                                
+
+                                
+                                 
+                                 <li class="nav-item ">
+                                     <a class="nav-link" href="/#process">Process</a>
+                                    
+                                </li>
+                                
+                                
+
+                                
+
+                                
+                                 
+                                 <li class="nav-item ">
+                                     <a class="nav-link" href="/#why">Why us ?</a>
+                                    
+                                </li>
+                                
                             </ul>
                         </div> 
                         <div class="navbar-btn d-none d-sm-block">
@@ -207,7 +229,7 @@
                             a team of passionate, purpose-led individuals that obsess over creating innovative solutions to
                             address our clients challenges and deliver unparalleled value.</p>
                         <ul>
-                            
+                            <!-- 
                              <li><a target="__blank" href=""><i class="fab fa-facebook-f"></i></a></li>
                             
                             
@@ -218,7 +240,7 @@
                             
                             
                             <li><a target="__blank" href=""><i class="fab fa-youtube"></i></a></li>
-                            
+                             -->
                         </ul>
                     </div>
                 </div>
@@ -231,9 +253,8 @@
                     <div class="footer-items-2 d-flex">
                         <ul>
                             <li><a href="/#services">Our Services</a></li>
-                            <li><a href="/#team">Meet The Team</a></li>
-                            <li><a href="#">Get in Touch</a></li>
-                            <li><a href="#">Blog & Projects</a></li>
+                            <li><a href="/#clients">Meet The Clients</a></li>
+                            <li><a onclick="Calendly.initPopupWidget({url: 'https://calendly.com/cloudcontinuous'});return false;">Get in Touch</a></li>
                             <li><a href="/#about">About Our Company</a></li>
                         </ul>
                     </div>
@@ -242,13 +263,16 @@
             <div class="col-lg-4 col-md-6 col-sm-8">
                 <div class="footer-widget ml-10 mt-30">
                     <div class="footer-title">
-                        <h4 class="title">Partners</h4>
+                        <h4 class="title">Company Details</h4>
                     </div>
                     <div class="footer-items-3">
-                        <p>Cloud Continuous has partnered with PrimeVC to Provide more accessible services and global reach to our clients.</p>
-                        <a href="https://prime.vc">
-                        <img src="/assets/images/primelogo.svg" width="280px">
-                    </a>
+                        
+                        <p> <strong>Contact</strong>📲<br>
+                            +995 551581773<br>
+                            +356 79796036<br>
+                            <strong>Address </strong>🇬🇪<br>
+                            Didube district, Kereselidze st,<br> building 1 apt no: 5,<br> Tbilisi, Georgia</p>
+                        
                     </div>
                 </div>
             </div>
@@ -257,7 +281,7 @@
             <div class="col-lg-12">
                 <div class="footer-copyright">
                     <span><i class="fal fa-phone-office"></i> + 356 79796036</span>
-                    <p>Copyright ©2022. All Rights Reserved</p>
+                    <p>Copyright ©2022. All Rights Reserved to CloudContinuous LLC</p>
                 </div>
                 <div class="back-top">
                     <a href="#" class="back-to-top">
@@ -291,8 +315,10 @@
 
     gtag('config', 'UA-96782038-2');
     </script>
-    <script async id="slcLiveChat" src="https://widget.sonetel.com/SonetelWidget.min.js" data-account-id="207409166"></script>
-
+    <!-- <script async id="slcLiveChat" src="https://widget.sonetel.com/SonetelWidget.min.js" data-account-id="207409166"></script> -->
+    <!-- BEGIN callpage.io widget -->
+    <script>var loadBabel = function(url, callback) {var script = document.createElement('script');script.async = true;if (script.readyState) {script.onreadystatechange = function() {if (script.readyState == 'loaded' || script.readyState == 'complete') {script.onreadystatechange = null;callback(window, document);}};} else {script.onload = function() {callback(window, document);};}script.src = url;document.head.appendChild(script);};var getCookie = function(cname) {var objToday = new Date();var version = objToday.toISOString().split('T')[0].split('-').join('');var name = cname + '=';var decodedCookie = decodeURIComponent(document.cookie);var cookieArray = decodedCookie.split(';');for (var i = 0; i < cookieArray.length; i++) {var cookie = cookieArray[i];cookie = cookie.trim();if (cookie.indexOf(name) == 0) {return cookie.substring(name.length, cookie.length);}}return version;};var loadWidget = function(window, document) {var __cp = {"id":"r_M0N1efD1Up9ByvBslg65lpBDOlu-IuVXKKbZoKkHw","version":"1.1"};var cp = document.createElement('script');cp.type = 'text/javascript';cp.async = true;cp.src = "++cdn-widget.callpage.io+build+js+callpage.js".replace(/[+]/g, '/').replace(/[=]/g, '.') + '?v=' + getCookie('callpage-widget-version');var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(cp, s);if (window.callpage) {alert('You could have only 1 CallPage code on your website!');} else {window.callpage = function(method) {if (method == '__getQueue') {return this.methods;} else if (method) {if (typeof window.callpage.execute === 'function') {return window.callpage.execute.apply(this, arguments);} else {(this.methods = this.methods || []).push({arguments: arguments,});}}};window.callpage.__cp = __cp;window.callpage('api.button.autoshow');}};loadBabel('https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js', function() {return loadWidget(window, document);});</script>
+    <!-- END callpage.io widget -->
 
 </body>
 </html>
