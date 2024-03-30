@@ -159,7 +159,7 @@
 				border-radius: 5px;
 				margin-right: 10px;
 				font-size: 14px;
-				color: #8a8a8a;
+				color: #000000;
 				@media #{$lg} {
 					width: 300px;
 				}
@@ -176,7 +176,7 @@
 				}
 				&::placeholder{
 					opacity: 1;
-					color: #8a8a8a;
+					color: #000000;
 				}
 			}
 		}

@@ -38,14 +38,14 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-12">
-                <div class="header-top-item d-flex justify-content-between">
+               <!--  <div class="header-top-item d-flex justify-content-between">
                     <div class="header-left-side">
                         <p><i class="fal fa-bells"></i> Are you looking for software services & solution provider?</p>
                     </div>
                     <div class="header-right-social d-flex justify-content-end align-items-center">
                         <ul class="d-none d-lg-block">
                             <li>
-                              <!--  <p><i class="fal fa-star"></i> Join With Us</p> -->
+                                <p><i class="fal fa-star"></i> Join With Us</p> 
                             </li>
                         </ul>
                         <ul class="d-none d-sm-block">
@@ -55,12 +55,12 @@
                             
                              <li><a target="__blank" href=""><i class="fab fa-twitter"></i></a></li>
                             
-                        <!--    
+                           
                              <li><a target="__blank" href=""><i class="fab fa-instagram"></i></a></li>
                             
                             
                             <li><a target="__blank" href=""><i class="fab fa-youtube"></i></a></li>
-                             -->
+                             
                         </ul>
                     </div>
                 </div>  header top item -->
@@ -116,7 +116,18 @@
                                 
                                  
                                  <li class="nav-item ">
-                                     <a class="nav-link" href="/#process">Process</a>
+                                     <a class="nav-link" href="/success-stories">Success Stories</a>
+                                    
+                                </li>
+                                
+                                
+
+                                
+
+                                
+                                 
+                                 <li class="nav-item ">
+                                     <a class="nav-link" href="/contact">Contact</a>
                                     
                                 </li>
                                 
@@ -208,9 +219,10 @@
                     <div class="footer-items-2 d-flex">
                         <ul>
                             <li><a href="/#services">Our Services</a></li>
-                            <li><a href="/#clients">Meet The Clients</a></li>
+                            <li><a href="/success-stories">Our Success</a></li>
+                            <li><a href="/locations">Locations</a></li>
                             <li><a onclick="Calendly.initPopupWidget({url: 'https://calendly.com/cloudcontinuous'});return false;">Get in Touch</a></li>
-                            <li><a href="/#about">About Our Company</a></li>
+                            <li><a href="/contact">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -223,11 +235,9 @@
                     <div class="footer-items-3">
                         
                         <p> <strong>Contact</strong>📲<br>
+                            +1 (312)-248-7619<br>
                             +995 551581773<br>
-                            +356 79796036<br>
-                            <strong>Address </strong>🇬🇪<br>
-                            Didube district, Kereselidze st,<br> building 1 apt no: 5,<br> Tbilisi, Georgia</p>
-                        
+                            +506 63449084<br>
                     </div>
                 </div>
             </div>
@@ -235,8 +245,8 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="footer-copyright">
-                    <span><i class="fal fa-phone-office"></i> + 995 551 581 773</span>
-                    <p>Copyright ©2022. All Rights Reserved to CloudContinuous LLC</p>
+                    <span><i class="fal fa-phone-office"></i> +1 (312) 248 7619 | +995 551 581 773</span>
+                    <p>Copyright ©2024. All Rights Reserved to CloudContinuous LLC</p>
                 </div>
                 <div class="back-top">
                     <a href="#" class="back-to-top">
@@ -270,8 +280,27 @@
 
     gtag('config', 'UA-96782038-2');
     </script>
-    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
-
+    <script src="https://mautic.fiott.org/focus/1.js" type="text/javascript" charset="utf-8" async="async"></script>
+    <script type="text/javascript">
+        /** This section is only needed once per page if manually copying **/
+        if (typeof MauticSDKLoaded == 'undefined') {
+            var MauticSDKLoaded = true;
+            var head            = document.getElementsByTagName('head')[0];
+            var script          = document.createElement('script');
+            script.type         = 'text/javascript';
+            script.src          = 'https://mautic.fiott.org/media/js/mautic-form.js?ve9d5a0e1';
+            script.onload       = function() {
+                MauticSDK.onLoad();
+            };
+            head.appendChild(script);
+            var MauticDomain = 'https://mautic.fiott.org';
+            var MauticLang   = {
+                'submittingMessage': "Please wait..."
+            }
+        }else if (typeof MauticSDK != 'undefined') {
+            MauticSDK.onLoad();
+        }
+    </script>
+    
 </body>
 </html>

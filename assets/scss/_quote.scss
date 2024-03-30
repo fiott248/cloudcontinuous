@@ -28,7 +28,7 @@
         & .title{
             font-weight: 300;
             font-size: 40px;
-            color: #8a8a8a;
+            color: #000000;
             line-height: 55px;
             & span{
                 color: $black;
@@ -63,9 +63,9 @@
                     border: 2px solid #eef3f9;
                     line-height: 70px;
                     padding-left: 30px;
-                    color: #8a8a8a;
+                    color: #000000;
                     &::placeholder{
-                        color: #8a8a8a;
+                        color: #000000;
                         opacity: 1;
                     }
                     &:focus{
@@ -80,7 +80,7 @@
                     border: 2px solid #eef3f9;
                     padding-left: 30px;
                     padding-top: 20px;
-                    color: #8a8a8a;
+                    color: #000000;
                     resize: none;
                     &:focus{
                         border-color: $theme-color-2;
@@ -88,7 +88,7 @@
                     }
                     &::placeholder{
                         opacity: 1;
-                        color: #8a8a8a;
+                        color: #000000;
                         
                     }
                 }

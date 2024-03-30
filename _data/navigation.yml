@@ -4,7 +4,9 @@
   url: /
 - text: Services
   url: /#services
-- text: Process
-  url: /#process
+- text: Success Stories
+  url: /success-stories
+- text: Contact
+  url: /contact
 - text: Why us ?
   url: /#why

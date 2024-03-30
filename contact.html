@@ -5,41 +5,54 @@ title: "Contact"
 ---
 
 
-{% include page_header.html %}
+<!-- {% include page_header.html %} -->
 
 <!--====== CONTACT INFO PART START ======-->
 
 <section class="contact-info-area pt-130 pb-130">
     <div class="container">
+        <div class="requst-content text-center">
+            <h2 class="title" style="padding: 20px;"><b>How can we help you ?</b></h2>
+        </div>
         <div class="row justify-content-center">
             <div class="col-lg-12 col-sm-8">
                 <div class="contact-info-border">
                     <div class="row">
-                        <div class="col-lg-4 col-md-4">
+                        <div class="col-lg-3 col-md-3">
                             <div class="contact-info-item text-center">
-                                <i class="fal fa-map-marked-alt"></i>
+                                <i class="fal fa-clock"></i>
                                 <ul>
-                                    <li>Internet City, Dubai, </li>
-                                    <li>UAE </li>
+                                    <li><b>2/3 months</b></li>
+                                    <li>MVP time-to-market</li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-4">
+                        <div class="col-lg-3 col-md-3">
                             <div class="contact-info-item text-center active">
-                                <i class="fal fa-envelope"></i>
+                                <i class="fal fa-calendar"></i>
                                 <ul>
-                                    <li>tech@cloudcontinuous.com</li>
+                                    <li><b>2 weeks iterations</b></li>
+                                    <li>We work in 2-week sprints</li>
                                 </ul>
-                                <img class="item-1" src="assets/images/contact-shape-1.png" alt="shape">
-                                <img class="item-2" src="assets/images/contact-shape-2.png" alt="shape">
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-4">
+                        <div class="col-lg-3 col-md-3">
                             <div class="contact-info-item text-center">
-                                <i class="fal fa-phone"></i>
+                                <i class="fal fa-flag"></i>
                                 <ul>
-                                    <li>+995 551581773</li>
-                                    <li>+356 79796036</li>
+                                    <li><b>Risk-free start</b></li>
+                                    <li>if you aren’t satisfied </li>
+                                    <li>with the first 4 weeks of work</li>
+                                    <li> It's Free (full refund)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <div class="contact-info-item text-center">
+                                <i class="fal fa-users"></i>
+                                <ul>
+                                    <li><b>Complete team/On demand Dev</b></li>
+                                    <li>both options are available</li> 
                                 </ul>
                             </div>
                         </div>
@@ -52,39 +65,51 @@ title: "Contact"
                 <div class="contact-thumb mt-30">
                     <img src="assets/images/raqui_cc.jpg" alt="">
                     <div class="contact-text">
-                        <h3 class="title">Leave A <br> Message</h3>
+                        <h3 class="title">You got a<br>Project<br>in Mind</h3>
                     </div>
                 </div>
             </div>
             <div class="col-lg-8 order-1 order-lg-2">
                 <div class="contact-massage-area mt-30 pl-70">
                     <div class="contact-massage-content">
-                        <h3 class="title">Send Us A Message</h3>
+                        <h3 class="title">Let's Discuss it</h3>
                         <p></p>
                     </div>
-                    <form id="contact-form" action="https://formspree.io/xlepjdak" method="post">
+                    <form autocomplete="false" role="form" method="post" action="https://mautic.fiott.org/form/submit?formId=3" id="mauticform_contactuscloud" data-mautic-form="contactuscloud" enctype="multipart/form-data">
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="input-box mt-20">
-                                    <input name="name" type="text" placeholder="Your Full Name">
+                                    <input type="text" name="mauticform[full_name]" id="mauticform_input_contactuscloud_full_name" placeholder="Your Name" class="mauticform-input">
                                     <i class="far fa-user"></i>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="input-box mt-20">
-                                    <input name="_replyto" type="text" placeholder="Your Email ">
+                                    <input type="email" name="mauticform[email]" id="mauticform_input_contactuscloud_email" placeholder="Your Best Email" class="mauticform-input">
                                     <i class="far fa-envelope"></i>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="input-box mt-20">
+                                      <select name="mauticform[budget]" style="width: 100%;" id="mauticform_input_contactuscloud_budget" placeholder="Need an Estimate" class="mauticform-selectbox">
+                                        <option value="">Need an Estimate</option>    <option value="Need an Estimate">Need an Estimate</option>      <option value="25,000 - 50,000">25,000 - 50,000</option>      <option value="50,000 - 100,000">50,000 - 100,000</option>      <option value="250,000+">250,000+</option>  
+                                      </select>
                                 </div>
                             </div>
                             <div class="col-lg-12">
                                 <div class="input-box mt-20">
-                                    <textarea name="message" id="#" cols="30" rows="10" placeholder="Write Message"></textarea>
+                                    <textarea name="mauticform[messsage]" cols="30" rows="10" id="mauticform_input_contactuscloud_messsage" placeholder="Write Your Message" class="mauticform-textarea"></textarea>
                                     <i class="far fa-pencil"></i>
                                     <div class="g-recaptcha" data-sitekey="6Lf--78ZAAAAAOaDA190QFlqxFzWFpY8K2wmpkvO"></div>
-                                    <button class="main-btn" type="submit">Send Message</button>
+                                    <span class="mauticform-errormsg" style="display:none;"></span>
+                                    <br>
+                                    <button class="main-btn" type="submit" name="mauticform[submit]" value="1" id="mauticform_input_contactuscloud_submit">Send Message</button>
                                 </div>
                             </div>
                         </div>
+                    <input type="hidden" name="mauticform[formId]" id="mauticform_contactuscloud_id" value="3">
+                    <input type="hidden" name="mauticform[return]" id="mauticform_contactuscloud_return" value="">
+                    <input type="hidden" name="mauticform[formName]" id="mauticform_contactuscloud_name" value="contactuscloud">
                     </form>
                     <p class="form-message"></p>
                 </div>
@@ -94,10 +119,10 @@ title: "Contact"
 </section> 
 
 <!--====== CONTACT INFO PART ENDS ======-->
-
+{% include call_to_action.html %}
 <!--====== CONTACT MAP PART START ======-->
 
-<div class="contact-map-area">
+<!-- <div class="contact-map-area">
     <div class="container-fluid p-0">
         <div class="row">
             <div class="col-lg-12">
@@ -108,6 +133,6 @@ title: "Contact"
             </div>
         </div>
     </div>
-</div> 
+</div>  -->
 <!--====== CONTACT MAP PART ENDS ======-->
 

@@ -152,7 +152,7 @@
 					width: 100%;
 					color: $white;
 					position: relative;
-					background: #298ecc;
+					background: #000000;
 					@media #{$lg} {
 						padding: 0 0 0 40px;
 						font-size: 18px;
@@ -173,7 +173,7 @@
 						}
 					}
 					&.collapsed{
-						color: #8a8a8a;
+						color: #000000;
 						background-color: transparent;
 						font-weight: 600;
 						@media #{$lg} {
@@ -202,7 +202,7 @@
 			}
 			& .card-body{
 				padding: 0 30px 20px 40px !important;
-				background: #298ecc;
+				background: #000000;
 				@media #{$xs} {
 					padding: 0 30px 20px 26px !important;
 				}

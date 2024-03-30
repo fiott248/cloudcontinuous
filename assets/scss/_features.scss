@@ -46,7 +46,7 @@
 			border-radius: 50%;
 			font-size: 30px;
 			color: $white;
-			background: #298ecc;
+			background: #000000;
 			@include transition(0.3s);
 		}
 		& .title{
@@ -63,7 +63,7 @@
 		}
 		& a{
 			font-size: 15px;
-			color: #298ecc;
+			color: #000000;
 			font-weight: 600;
 			margin-top: 24px;
 			@include transition(0.3s);
@@ -73,18 +73,18 @@
 		}
 		&.item-2{
 			& > i{
-				background: #803fff;
+				background: #000000;
 			}
 			& a{
-				color: #803fff;
+				color: #000000;
 			}
 		}
 		&.item-3{
 			& > i{
-				background: #44afff;
+				background: #000000;
 			}
 			& a{
-				color: #44afff;
+				color: #000000;
 			}
 		}
 		&.item-4{
@@ -96,10 +96,10 @@
 			}
 		}
 		&:hover{
-			background: #298ecc;
+			background: #000000;
 			& > i{
 				background: $white;
-				color: #298ecc;
+				color: #000000;
 			}
 			& .title{
 				color: $white;
@@ -108,15 +108,15 @@
 				color: $white;
 			}
 			&.item-2{
-				background: #803fff;
+				background: #000000;
 				& > i{
-					color: #803fff;
+					color: #000000;
 				}
 			}
 			&.item-3{
-				background: #44afff;
+				background: #000000;
 				& > i{
-					color: #44afff;
+					color: #000000;
 				}
 			}
 			&.item-4{
@@ -142,7 +142,7 @@
 		& p{
 			font-size: 14px;
 			line-height: 26px;
-			color: #8a8a8a;
+			color: #000000;
 			padding-top: 20px;
 		}
 	}
@@ -182,7 +182,7 @@
 				width: 60px;
 				text-align: center;
 				border-radius: 50%;
-				background: #298ecc;
+				background: #000000;
 				line-height: 60px;
 				font-size: 24px;
 				color: $white;
@@ -211,20 +211,20 @@
 		&.item-2{
 			& .featires-content{
 				& > i{
-					background: #803fff;
+					background: #000000;
 				}
 				& a{
-					color: #803fff;
+					color: #000000;
 				}
 			}
 		}
 		&.item-3{
 			& .featires-content{
 				& > i{
-					background: #44afff;
+					background: #000000;
 				}
 				& a{
-					color: #44afff;
+					color: #000000;
 				}
 			}
 		}
@@ -245,9 +245,9 @@
 				}
 			}
 			& .featires-content{
-				background: #298ecc;
+				background: #000000;
 				& > i{
-					color: #298ecc;
+					color: #000000;
 					background: $white;
 				}
 				& .title{
@@ -259,17 +259,17 @@
 			}
 			&.item-2{
 				& .featires-content{
-					background: #803fff;
+					background: #000000;
 					& i{
-						color: #803fff;
+						color: #000000;
 					}
 				}
 			}
 			&.item-3{
 				& .featires-content{
-					background: #44afff;
+					background: #000000;
 					& i{
-						color: #44afff;
+						color: #000000;
 					}
 				}
 			}

@@ -258,7 +258,7 @@
 			& span{
 				font-size: 14px;
 				font-weight: 700;
-				color: #298ecc;
+				color: #000000;
 				padding-bottom: 13px;
 			}
 		}
@@ -282,8 +282,8 @@
 					& a{
 						&:hover,
 						&.active{
-							background: #298ecc;
-							border-color: #298ecc;
+							background: #000000;
+							border-color: #000000;
 							box-shadow: none;
 						}
 					}
