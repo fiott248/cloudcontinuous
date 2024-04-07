@@ -274,6 +274,7 @@ DEPENDENCIES
   jekyll-feed (~> 0.12)
   jekyll-paginate-v2
   jekyll-seo-tag
+  jekyll-sitemap
   jekyll-tagging
   minima (~> 2.5)
   tzinfo-data

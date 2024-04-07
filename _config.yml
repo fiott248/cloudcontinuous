@@ -1,4 +1,4 @@
-title: "Cloud engineering and Development Services"
+title: "Cloud & Development Services, Empowering businesses through AI/Machine Learnting"
 email: "tech@cloudcontinuous.com"
 description: >- # this means to ignore newlines until "baseurl:"
  Cloud engineering & Development strategies & Consulting Services. Increase your business value distribution by utilizing cloud and development services. 
@@ -8,8 +8,8 @@ facebook_url: ""
 twitter_url: ""
 github_url:  ""
 pinterest_url: ""
-linkedin_url: ""
-instagram_url: ""
+linkedin_url: "https://www.linkedin.com/company/cloudcontinuous"
+instagram_url: "https://www.instagram.com/cloudcontinuous"
 youtube_url: ""
 logo: "/assets/images/cc-logo-white-250-63.png"
 logo_2: "/assets/images/cc-logo-blue-400-100.png"
@@ -31,6 +31,7 @@ plugins:
   - jekyll-archives
   - jekyll-coffeescript
   - jekyll-seo-tag
+  - jekyll-sitemap
 sass:
     sass_dir: assets/scss
     style: compressed
@@ -44,7 +45,7 @@ pagination:
   enabled: true
 
   # Set to 'true' to enable pagination debugging. This can be enabled in the site config or only for individual pagination page
-  debug: false
+  debug: true
 
   # The default document collection to paginate if nothing is specified ('posts' is default)
   collection: 'posts'
@@ -107,3 +108,46 @@ feed:
   collections:
     posts:
       path: "/index.xml"
+
+# autopages:
+
+#   # Site-wide kill switch, disable here and it doesn't run at all 
+#   enabled: true
+
+#   # Category pages, omit entire config element to disable
+#   categories: 
+#     # Optional, the list of layouts that should be processed for every category found in the site
+#     layouts: 
+#       - 'autopage_category.html'
+#     # Optional, the title that each category paginate page should get (:cat is replaced by the Category name)
+#     title: 'Posts in category :cat'
+#     # Optional, the permalink for the  pagination page (:cat is replaced), 
+#     # the pagination permalink path is then appended to this permalink structure
+#     permalink: '/category/:cat'
+#     # Optional, when true logging related to category pages will be supressed.
+#     silent: false
+#     slugify:
+#       mode: 'default'   # :cat is slugified. Modes: default, raw, pretty, ascii, latin
+#       case: false       # Whether to replace all uppercase letters with their lowercase counterparts
+
+#   # Collection pages, omit to disable
+#   collections:
+#     layouts: 
+#       - 'default_2.html'
+#     title: 'Posts in collection :coll' # :coll is replaced by the collection name
+#     permalink: '/case-studies/:coll'
+#     silent: false
+#     slugify:
+#       mode: 'default'   # :coll is slugified.
+#       case: false 
+  
+#   # Tag pages, omit to disable
+#   tags:
+#     layouts: 
+#       - 'autopage_tags.html'
+#     title: 'Posts tagged with :tag' # :tag is replaced by the tag name
+#     permalink: '/tag/:tag'
+#     silent: false
+#     slugify:
+#       mode: 'default'   # :tag is slugified.
+#       case: false

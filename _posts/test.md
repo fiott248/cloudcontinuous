@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: use-case
 title: "Serverless Systems"
 date: 2020-07-01 20:37:13 +0600
-tags: technologies services
+tags: technologies
 categories: [test]
 author: "Daniel Fiott"
 permalink: /:title:output_ext
@@ -20,4 +20,3 @@ post_image: "/assets/images/blog-1.jpg"
 <h4>Why should I consider Serverless Systems?</h4>
 
 <p>Serverless Systems can Guarantee you some of the highest availability for the cost required, since you do not need to think about infrastructure and maintenance, global availability and scalability which are quite of time consuming you are able to prototype or test your application in an agile manner and less time consuming.</p>
-
