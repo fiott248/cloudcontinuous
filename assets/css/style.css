@@ -2455,6 +2455,7 @@ p {
   overflow: hidden;
   position: relative;
   z-index: 10;
+  border: 1px solid #000000;
 }
 .project-case-area .project-case-item .project-case-thumb::after {
   position: absolute;
@@ -2484,6 +2485,12 @@ p {
   font-size: 35px;
   z-index: 2;
 }
+.project-case-area .project-case-item .project-case-thumb p {
+  font-weight: 500;
+  color: #000000;
+  padding-top: 8px;
+  padding-bottom: 19px;
+}
 .project-case-area .project-case-item .project-case-content .title {
   font-size: 24px;
   color: #222;
@@ -2495,6 +2502,11 @@ p {
 }
 .project-case-area .project-case-item .project-case-content span {
   font-weight: 500;
+  color: #000000;
+  padding-top: 8px;
+  padding-bottom: 19px;
+}
+.project-case-area .project-case-item .project-case-content p {
   color: #000000;
   padding-top: 8px;
   padding-bottom: 19px;
@@ -2534,6 +2546,8 @@ p {
 }
 .project-case-area.project-home {
   padding-top: 117px;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 /*===========================
