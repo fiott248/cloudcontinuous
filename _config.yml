@@ -1,8 +1,8 @@
-title: "Cloud & Development Services, Empowering businesses through AI/Machine Learnting"
+title: "Cloud Continuous | Empowering Medical, Manufacturing, Energy Through AI, Machine Learning and More"
 email: "tech@cloudcontinuous.com"
 description: >- # this means to ignore newlines until "baseurl:"
- Cloud engineering & Development strategies & Consulting Services. Increase your business value distribution by utilizing cloud and development services. 
-baseurl: "" # the subpath of your site, e.g. /blog
+ Cloud Continuous is a leading software development agency specializing in custom software solutions for the medical, manufacturing, and energy industries. Our expertise includes machine learning and AI technologies, allowing us to create innovative and tailored solutions for a wide range of industries. Contact us to learn more about our services and how we can help your business succeed. 
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://cloudcontinuous.com" # the base hostname & protocol for your site, e.g. http://example.com or  https://tradejk.netlify.com
 facebook_url: ""
 twitter_url: ""
@@ -74,11 +74,11 @@ pagination:
   category: 'posts'
 
   # Optional, the default tag to use, omit to disable
-  tag: 'Software Agency'
+  tag: 'Software_Agency AI Machine_Learning'
 
   # Optional, the default locale to use, omit to disable (depends on a field 'locale' to be specified in the posts, 
   # in reality this can be any value, suggested are the Microsoft locale-codes (e.g. en_US, en_GB) or simply the ISO-639 language code )
-  locale: '' 
+  locale: 'en_US' 
 
  # Optional,omit or set both before and after to zero to disable. 
  # Controls how the pagination trail for the paginated pages look like. 
