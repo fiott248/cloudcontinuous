@@ -5229,6 +5229,7 @@ p {
   color: #000000;
   background-color: transparent;
   font-weight: 600;
+  border: solid 0.1em #000;
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .faq-accordion .accordion .card .card-header a.collapsed {

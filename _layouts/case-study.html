@@ -1,0 +1,115 @@
+---
+layout: default
+---
+
+<section class="requst-quote-area bg_cover pt-115" style="background-image: url({{page.post_image}}); margin-top: 115px">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="requst-content text-center">
+                    <h1 class="title">{{page.title}}</h1>
+                    <p>{{page.small_desc}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="newaletter-area">
+    <div class="container">
+        <img src="{{page.second_image}}" alt="team">
+    </div>
+</div>
+
+
+<section class="project-case-area project-home pt-100">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="section-title text-center">
+                    <h2 class="title"><span>Key Project Metrics<span></span></span></h2>
+                    <p>{{page.metrics_desc}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-7 col-sm-9">
+                <div class="project-case-item mt-30">
+                    <div class="project-case-thumb" style="width: 350px;height: 300px;display: flex;align-items: center;flex-direction: column;align-content: space-around; padding: 50px">
+                        <h3 class="title">Technologies</h3>
+                        {% for item in page.technology %}
+                        <p>{{ item }}</p>
+                    {% endfor %}
+                        <i class="fal fa-retweet"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-7 col-sm-9">
+                <div class="project-case-item mt-30">
+                    <div class="project-case-thumb" style="width: 350px;height: 300px;display: flex;align-items: center;flex-direction: column;align-content: space-around; padding: 50px">
+                        <h3 class="title">Budget</h3>
+                        <p>{{page.budget}}</p>
+                        <i class="fal fa-link"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-7 col-sm-9">
+                <div class="project-case-item mt-30">
+                    <div class="project-case-thumb" style="width: 350px;height: 300px;display: flex;align-items: center;flex-direction: column;align-content: space-around; padding: 50px">
+                        <h3 class="title">Industry</h3>
+                        <p>{{page.industry}}</p>
+                        <i class="fal fa-award"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-7 col-sm-9">
+                <div class="project-case-item mt-30">
+                    <div class="project-case-thumb" style="width: 350px;height: 300px;display: flex;align-items: center;flex-direction: column;align-content: space-around; padding: 50px">
+                        <h3 class="title">Team Members</h3>
+                        {% for item in page.members %}
+                        <p>{{ item }}</p>
+                    {% endfor %}
+                        <i class="fal fa-retweet"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-7 col-sm-9">
+                <div class="project-case-item mt-30">
+                    <div class="project-case-thumb" style="width: 350px;height: 300px;display: flex;align-items: center;flex-direction: column;align-content: space-around; padding: 50px">
+                        <h3 class="title">Timeline</h3>
+                        <p>{{page.timeline}}</p>
+                        <i class="fal fa-link"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-7 col-sm-9">
+                <div class="project-case-item mt-30">
+                    <div class="project-case-thumb" style="width: 350px;height: 300px;display: flex;align-items: center;flex-direction: column;align-content: space-around; padding: 50px">
+                        <h3 class="title">Integrations</h3>
+                        {% for item in page.members %}
+                        <p>{{ item }}</p>
+                    {% endfor %}
+                        <i class="fal fa-award"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="blog-standard-area blog-details-area pt-100 pb-130">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-14">
+                <div class="blog-standard mt-30">
+                    <div class="blog-item">
+                        <div class="blog-content white-bg ">
+                         {{content}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> 
+

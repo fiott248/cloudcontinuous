@@ -1,12 +1,31 @@
 ---
-layout: use-case
-title: "Serverless Systems"
-date: 2020-07-01 20:37:13 +0600
+layout: case-study
+title: "dasdsds"
+description: "dsadasdasda"
+background: ""
 tags: technologies
-categories: [test]
+categories: [case_studies]
 author: "Daniel Fiott"
-permalink: /:title:output_ext
-post_image: "/assets/images/blog-1.jpg"
+permalink: /cases/dsads:output_ext
+second_image: "/assets/images/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg"
+budget: ""
+timeline: ""
+technology: 
+  - Item 1
+  - Item 2
+  - Item 3
+  - Item 3
+metrics_desc: ""
+members: 
+  - Item 1
+  - Item 2
+  - Item 3
+  - Item 3
+integrations: 
+  - Item 1
+  - Item 2
+  - Item 3
+  - Item 3
 ---
 
 <h4>Why Serverless?</h4>

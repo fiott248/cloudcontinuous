@@ -1,8 +1,8 @@
-title: "Cloud Continuous | Empowering Medical, Manufacturing, Energy Through AI, Machine Learning and More"
+title: "CloudContinuous | Home"
 email: "tech@cloudcontinuous.com"
 description: >- # this means to ignore newlines until "baseurl:"
  Cloud Continuous is a leading software development agency specializing in custom software solutions for the medical, manufacturing, and energy industries. Our expertise includes machine learning and AI technologies, allowing us to create innovative and tailored solutions for a wide range of industries. Contact us to learn more about our services and how we can help your business succeed. 
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://cloudcontinuous.com" # the base hostname & protocol for your site, e.g. http://example.com or  https://tradejk.netlify.com
 facebook_url: ""
 twitter_url: ""
@@ -45,17 +45,17 @@ pagination:
   enabled: true
 
   # Set to 'true' to enable pagination debugging. This can be enabled in the site config or only for individual pagination page
-  debug: true
+  debug: false
 
   # The default document collection to paginate if nothing is specified ('posts' is default)
   collection: 'posts'
 
   # How many objects per paginated page, used to be `paginate` (default: 0, means all)
-  per_page: 6
+  per_page: 0
 
   # The permalink structure for the paginated pages (this can be any level deep)
   #permalink: '/page/:num/' # Pages are index.html inside this folder (default)
-  permalink: '/:num/' # Pages are simple html file
+  permalink: ':title' # Pages are simple html file
   #permalink: '/page/:num' # Pages are html files, linked jekyll extensionless permalink style.
 
   # Optional the title format for the paginated pages (supports :title for original page title, :num for pagination page number, :max for total number of pages)
@@ -98,11 +98,11 @@ tag_page_layout: tag_page
 tag_page_dir: tag
 tag_permalink_style: pretty
 
-jekyll-archives:
-  enabled: all
-  layout: category
-  permalinks:
-    category: '/category/:name/'
+# jekyll-archives:
+#   enabled: all
+#   layout: category
+#   permalinks:
+#     category: '/category/:name/'
 
 feed:
   collections:
