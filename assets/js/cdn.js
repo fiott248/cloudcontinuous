@@ -902,6 +902,6 @@
     } catch (e) {
       sendError(e);
     }
-  })(window, {}, "cdn.cloudcontinuous.com", "", "latest", "sa");
+  })(window, {}, "t.cloudcontinuous.com", "", "latest", "sa");
   
   
