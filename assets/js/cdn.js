@@ -22,7 +22,7 @@
       var trueVar = true;
       var falseVar = false;
       var trueText = "true";
-      var https = "http:";
+      var https = "https:";
       var pageviewText = "pageview";
       var eventText = "event";
       var errorText = "error";
@@ -539,7 +539,7 @@
           sendData(append, undefinedVar, trueVar);
         } else {
           
-          nav.sendBeacon(fullApiUrl + "/append", stringify(append));
+        //   nav.sendBeacon(fullApiUrl + "/append", stringify(append));
              //     var url = fullApiUrl + "/append?" + new URLSearchParams(append).toString();
                  // fetch(url, { method: 'GET', keepalive: true })
               //   .catch(function(error) {
