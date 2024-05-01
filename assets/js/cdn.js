@@ -303,9 +303,8 @@
           image.onload = callback;
         }
       
-        // Collect IP address and add it to the data
         collectIpAddress().then(ip => {
-          data.ip_address = ip;
+          // data.ip_address = ip;
       
           image.src =
             fullApiUrl +
