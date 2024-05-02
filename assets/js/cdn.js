@@ -305,6 +305,7 @@
       
         collectIpAddress().then(ip => {
           // data.ip_address = ip;
+          data.location = window.location.href;
       
           image.src =
             fullApiUrl +
