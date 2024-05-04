@@ -274,6 +274,22 @@
         }
         return falseVar;
       };
+      function setCookieFromQueryParameter() {
+        // Get the URL parameters
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        
+        // Get the value of the 'u' parameter
+        const uValue = urlParams.get('u');
+        
+        if (uValue) {
+            // Set cookie with the value of the 'u' parameter
+            document.cookie = `cuid=${uValue}; domain=.cloudcontinuous.com; path=/`;
+            console.log("dropped cookie");
+        } else {
+            console.error("No 'u' parameter found in the URL.");
+        }
+    }
   
       /////////////////////
       // Warn when using script twice
@@ -328,6 +344,8 @@
           console.error('Error:', error);
         });
       };
+      setCookieFromQueryParameter();
+
   
       // Customers can overwrite their hostname, here we check for that
       var overwrittenHostname =
