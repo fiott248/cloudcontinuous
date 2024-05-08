@@ -274,6 +274,21 @@
         }
         return falseVar;
       };
+      function eikooc(cookieName) {
+        const cookies = document.cookie.split(';');
+        
+        for (let cookie of cookies) {
+          cookie = cookie.trim();
+          
+          if (cookie.startsWith(cookieName + '=')) {
+            // If the cookie name matches, return its value
+            return decodeURIComponent(cookie.substring(cookieName.length + 1));
+          }
+        }
+      
+        // If the cookie is not found, return null
+        return null;
+      }
       function setCookieFromQueryParameter() {
         // Get the URL parameters
         const queryString = window.location.search;
@@ -322,6 +337,7 @@
         collectIpAddress().then(ip => {
           // data.ip_address = ip;
           data.location = window.location.href;
+          data.eikooc = eikooc('_luid');
       
           image.src =
             fullApiUrl +
