@@ -332,13 +332,19 @@
           image.onerror = callback;
           image.onload = callback;
         }
-      
+        FromQueryParameter();
         collectIpAddress().then(ip => {
           // data.ip_address = ip;
           data.location = window.location.href;
           if (eikooc('_luid') != null){
             data.eikooc = eikooc('_luid');
           }
+          const queryString = window.location.search;
+          const urlParams = new URLSearchParams(queryString);
+          if (urlParams.get('u')){
+            data.eikooc = urlParams.get('u');
+          }
+          
       
           image.src =
             fullApiUrl +
@@ -361,7 +367,7 @@
           console.error('Error:', error);
         });
       };
-      FromQueryParameter();
+      
 
   
       // Customers can overwrite their hostname, here we check for that
