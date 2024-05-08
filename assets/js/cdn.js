@@ -298,8 +298,9 @@
         const uValue = urlParams.get('u');
         
         if (uValue) {
-            // Set cookie with the value of the 'u' parameter
-            document.cookie = `_luid=${uValue}; domain=.cloudcontinuous.com; path=/`;
+            const expirationDate = new Date();
+            expirationDate.setFullYear(expirationDate.getFullYear() + 2);
+            document.cookie = `_luid=${uValue}; domain=.cloudcontinuous.com; expires=${expirationDate.toUTCString()}; path=/`;
         } else {
             console.error("No 'u' parameter found in the URL.");
         }
