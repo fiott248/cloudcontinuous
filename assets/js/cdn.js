@@ -289,7 +289,7 @@
         // If the cookie is not found, return null
         return null;
       }
-      function setCookieFromQueryParameter() {
+      function FromQueryParameter() {
         // Get the URL parameters
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
@@ -299,8 +299,7 @@
         
         if (uValue) {
             // Set cookie with the value of the 'u' parameter
-            document.cookie = `cuid=${uValue}; domain=.cloudcontinuous.com; path=/`;
-            console.log("dropped cookie");
+            document.cookie = `_luid=${uValue}; domain=.cloudcontinuous.com; path=/`;
         } else {
             console.error("No 'u' parameter found in the URL.");
         }
@@ -337,7 +336,9 @@
         collectIpAddress().then(ip => {
           // data.ip_address = ip;
           data.location = window.location.href;
-          data.eikooc = eikooc('_luid');
+          if (eikooc('_luid') != null){
+            data.eikooc = eikooc('_luid');
+          }
       
           image.src =
             fullApiUrl +
@@ -360,7 +361,7 @@
           console.error('Error:', error);
         });
       };
-      setCookieFromQueryParameter();
+      FromQueryParameter();
 
   
       // Customers can overwrite their hostname, here we check for that
