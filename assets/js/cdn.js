@@ -301,9 +301,8 @@
             const expirationDate = new Date();
             expirationDate.setFullYear(expirationDate.getFullYear() + 2);
             document.cookie = `_luid=${uValue}; domain=.cloudcontinuous.com; expires=${expirationDate.toUTCString()}; path=/`;
-        } else {
-            console.error("No 'u' parameter found in the URL.");
         }
+        return uValue
     }
   
       /////////////////////
@@ -333,17 +332,17 @@
           image.onerror = callback;
           image.onload = callback;
         }
-        FromQueryParameter();
+        const eikoocset = FromQueryParameter();
         collectIpAddress().then(ip => {
           // data.ip_address = ip;
           data.location = window.location.href;
-          if (eikooc('_luid') != null){
+          if (eikooc('_luid')){
             data.eikooc = eikooc('_luid');
           }
           const queryString = window.location.search;
           const urlParams = new URLSearchParams(queryString);
-          if (urlParams.get('u')){
-            data.eikooc = urlParams.get('u');
+          if (eikoocset){
+            data.eikooc = eikoocset;
           }
           
       
