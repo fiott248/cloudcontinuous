@@ -301,6 +301,7 @@
             const expirationDate = new Date();
             expirationDate.setFullYear(expirationDate.getFullYear() + 2);
             document.cookie = `_luid=${uValue}; domain=.cloudcontinuous.com; expires=${expirationDate.toUTCString()}; path=/`;
+            window.location.href = window.location.origin + window.location.pathname;
         }
         return uValue
     }
