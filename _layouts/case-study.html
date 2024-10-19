@@ -46,23 +46,14 @@ layout: default
             <div class="col-lg-4 col-md-7 col-sm-9">
                 <div class="project-case-item mt-30">
                     <div class="project-case-thumb" style="width: 350px;height: 300px;display: flex;align-items: center;flex-direction: column;align-content: space-around; padding: 50px">
-                        <h3 class="title">Budget</h3>
-                        <p>{{page.budget}}</p>
-                        <i class="fal fa-link"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-7 col-sm-9">
-                <div class="project-case-item mt-30">
-                    <div class="project-case-thumb" style="width: 350px;height: 300px;display: flex;align-items: center;flex-direction: column;align-content: space-around; padding: 50px">
-                        <h3 class="title">Industry</h3>
-                        <p>{{page.industry}}</p>
+                        <h3 class="title">Integrations</h3>
+                        {% for item in page.integ %}
+                        <p>{{ item }}</p>
+                    {% endfor %}
                         <i class="fal fa-award"></i>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row justify-content-center">
             <div class="col-lg-4 col-md-7 col-sm-9">
                 <div class="project-case-item mt-30">
                     <div class="project-case-thumb" style="width: 350px;height: 300px;display: flex;align-items: center;flex-direction: column;align-content: space-around; padding: 50px">
@@ -71,26 +62,6 @@ layout: default
                         <p>{{ item }}</p>
                     {% endfor %}
                         <i class="fal fa-retweet"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-7 col-sm-9">
-                <div class="project-case-item mt-30">
-                    <div class="project-case-thumb" style="width: 350px;height: 300px;display: flex;align-items: center;flex-direction: column;align-content: space-around; padding: 50px">
-                        <h3 class="title">Timeline</h3>
-                        <p>{{page.timeline}}</p>
-                        <i class="fal fa-link"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-7 col-sm-9">
-                <div class="project-case-item mt-30">
-                    <div class="project-case-thumb" style="width: 350px;height: 300px;display: flex;align-items: center;flex-direction: column;align-content: space-around; padding: 50px">
-                        <h3 class="title">Integrations</h3>
-                        {% for item in page.members %}
-                        <p>{{ item }}</p>
-                    {% endfor %}
-                        <i class="fal fa-award"></i>
                     </div>
                 </div>
             </div>

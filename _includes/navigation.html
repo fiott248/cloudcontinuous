@@ -23,17 +23,39 @@
 
                                 {% if page.url contains link.url %}
                                     {% assign active = 'active' %}
+                                    {% assign hover = 'hover' %}
                                 {% endif %}
                                  
                                  <li class="nav-item {{active}}">
-                                     <a class="nav-link" href="{{link.url}}">{{link.text}}{% if link.submenu %}  <i class="fal fa-angle-down"></i>{% endif %}</a>
-                                    {% if link.submenu %}
-                                    <ul class="sub-menu">
-                                        {% for sublink in link.submenu %}
-                                        <li><a class="nav-link" href="{{sublink.url}}">{{sublink.text}}</a></li>
+                                    <a class="nav-link" href="{{link.url}}">
+                                        {{link.text}}
+                                        {% if link.submenu %}
+                                            {% if hover %}
+                                                <i class="fal fa-angle-down"></i>
+                                            {% else %}
+                                                <i class="fal fa-angle-up"></i>
+                                            {% endif %}
+                                        {% endif %}
+                                    </a>
+                                {% if link.submenu %}
+                                <ul class="sub-menu two-column-menu">
+                                    {% assign halfway_index = link.submenu.size | divided_by: 2 %}
+                                    <li class="column">
+                                        <ul>
+                                        {% for sublink in link.submenu limit:halfway_index %}
+                                            <li><a class="nav-link" href="{{sublink.url}}">{{sublink.text}}</a></li>
                                         {% endfor %}
-                                    </ul>
-                                    {% endif %}
+                                        </ul>
+                                    </li>
+                                    <li class="column">
+                                        <ul>
+                                        {% for sublink in link.submenu offset:halfway_index %}
+                                            <li><a class="nav-link" href="{{sublink.url}}">{{sublink.text}}</a></li>
+                                        {% endfor %}
+                                        </ul>
+                                    </li>
+                                </ul>
+                                {% endif %}
                                 </li>
                                 {% endfor %}
                             </ul>

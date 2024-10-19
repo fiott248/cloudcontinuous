@@ -570,7 +570,7 @@ p {
   }
 }
 .header-nav .navigation .navbar .navbar-nav .nav-item {
-  position: relative;
+  /* position: relative; */
 }
 .header-nav .navigation .navbar .navbar-nav .nav-item a {
   font-size: 18px;
@@ -662,7 +662,7 @@ p {
   position: absolute;
   left: 0;
   top: 110%;
-  width: 200px;
+  width: 400px;
   background-color: #fff;
   opacity: 0;
   visibility: hidden;
@@ -676,6 +676,44 @@ p {
   -moz-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.16);
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.16);
 }
+.sub-menu.two-column-menu {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0;
+  list-style: none;
+  background: #fff; /* Ensure background is set */ /* Optional: add border for visibility */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow for visibility */
+}
+
+.sub-menu.two-column-menu .column {
+  flex: 1;
+
+}
+
+.sub-menu.two-column-menu .column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navbar-nav .nav-item {
+  position: relative;
+}
+
+/* .navbar-nav .sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+} */
+
+.navbar-nav .nav-item:hover > .sub-menu {
+  display: flex;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .header-nav .navigation .navbar .navbar-nav .nav-item .sub-menu {
     position: relative !important;
@@ -734,7 +772,7 @@ p {
   position: relative;
 }
 .header-nav .navigation .navbar .navbar-nav .nav-item .sub-menu > li .sub-nav-toggler {
-  color: #ffffff
+  color: #ffffff;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
@@ -745,7 +783,7 @@ p {
   display: block;
   padding: 8px 24px;
   position: relative;
-  color: #7e7e7e;
+  color: #000000;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
@@ -755,6 +793,24 @@ p {
   margin: 0 0;
   line-height: 30px;
 }
+
+.header-nav .navigation .navbar .navbar-nav .nav-item .sub-menu > li a:hover {
+  display: block;
+  padding: 8px 24px;
+  position: relative;
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  border-radius: 0;
+  margin: 0 0;
+  line-height: 30px;
+}
+
+
+
 .header-nav .navigation .navbar .navbar-nav .nav-item .sub-menu > li a i {
   float: right;
   font-size: 14px;
@@ -807,6 +863,11 @@ p {
   background-color: #000000;
   color: #fff !important;
 }
+.sub-menu.two-column-menu .column ul li:hover > a {
+  background-color: #000; /* Background black on hover */
+  color: #fff; /* Text white on hover */
+}
+
 .header-nav .navigation .navbar .navbar-nav .nav-item:hover .sub-menu {
   opacity: 1;
   visibility: visible;
@@ -3916,7 +3977,7 @@ p {
 .requst-quote-area {
   position: relative;
   z-index: 10;
-  padding-bottom: 230px;
+  padding-bottom: 100px;
   padding-top: 117px;
 }
 .requst-quote-area::before {
@@ -3972,7 +4033,7 @@ p {
 }
 
 .newaletter-area {
-  margin-bottom: 130px;
+  /* margin-bottom: 130px; */
   position: relative;
   margin-top: -100px;
   z-index: 11;

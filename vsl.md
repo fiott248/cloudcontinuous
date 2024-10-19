@@ -1,31 +1,14 @@
 ---
-layout: case-study
-title: "dasdsds"
+layout: vsl
+title: "One Step away from learning how you can SCALE your business with seamless software solutions"
+small_desc: "The best part if you aren’t satisfied with the first 2 weeks of work It's Free (full refund)"
 description: "dsadasdasda"
 background: ""
 tags: technologies
 categories: [case_studies]
 author: "Daniel Fiott"
-permalink: /cases/dsads:output_ext
+permalink: /vsl:output_ext
 second_image: "/assets/images/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg"
-budget: ""
-timeline: ""
-technology: 
-  - Item 1
-  - Item 2
-  - Item 3
-  - Item 3
-metrics_desc: ""
-members: 
-  - Item 1
-  - Item 2
-  - Item 3
-  - Item 3
-integrations: 
-  - Item 1
-  - Item 2
-  - Item 3
-  - Item 3
 ---
 
 <h4>Why Serverless?</h4>
