@@ -6,14 +6,12 @@
 - text: What we Do
   url: /#services
   submenu:
-  # - text: Zero Trust
-  #   url: /zta
-  # - text: Custom Software Solutions
-  #   url: index-3
-  # - text: Home 2
-  #   url: /index-2
-  # - text: Home 3
-  #   url: index-3
+  - text: Define Data Strategy
+    url: /define-data-strategy
+  - text: Build Scaleable Technology
+    url: /build-scalable-technology
+  - text: Leverage Data-Driven Insights
+    url: /leverage-data-driven-insights
 - text: Success Stories
   url: /success-stories
 - text: Contact

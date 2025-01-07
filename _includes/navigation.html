@@ -39,7 +39,7 @@
                                     </a>
                                 {% if link.submenu %}
                                 <ul class="sub-menu two-column-menu">
-                                    {% assign halfway_index = link.submenu.size | divided_by: 2 %}
+                                    {% assign halfway_index = link.submenu.size %}
                                     <li class="column">
                                         <ul>
                                         {% for sublink in link.submenu limit:halfway_index %}
@@ -47,13 +47,13 @@
                                         {% endfor %}
                                         </ul>
                                     </li>
-                                    <li class="column">
+                                    <!-- <li class="column">
                                         <ul>
                                         {% for sublink in link.submenu offset:halfway_index %}
                                             <li><a class="nav-link" href="{{sublink.url}}">{{sublink.text}}</a></li>
                                         {% endfor %}
                                         </ul>
-                                    </li>
+                                    </li> -->
                                 </ul>
                                 {% endif %}
                                 </li>
@@ -61,7 +61,7 @@
                             </ul>
                         </div> 
                         <div class="navbar-btn d-none d-sm-block">
-                            <a class="main-btn" onclick="Calendly.initPopupWidget({url: 'https://api.leadconnectorhq.com/widget/booking/spfDg8KL3l2J6ZbKaBBV'});return false;">Get in Touch</a>
+                            <a class="main-btn" onclick="Calendly.initPopupWidget({url: 'https://api.leadconnectorhq.com/widget/booking/spfDg8KL3l2J6ZbKaBBV'});return false;">Start Here</a>
                         </div>
                     </nav>
                 </div>

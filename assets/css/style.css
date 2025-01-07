@@ -136,7 +136,7 @@ p {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  border: 1px solid #000000;
+  border: 1px solid #ffffff;
   padding: 0 38px;
   font-size: 15px;
   text-transform: capitalize;
@@ -192,7 +192,7 @@ p {
 .main-btn.main-btn-2 {
   background-color: #000000;
   color: #fff;
-  border-color: #000000;
+  border-color: #ffffff;
 }
 .main-btn.main-btn-2:hover {
   background-color: #fff;
@@ -5439,13 +5439,14 @@ p {
   }
 }
 .category-area .category-misson .misson-item a {
-  background: #fc5546;
-  border-color: #fc5546;
+  background: #ffffff;
+  border-color: #000000;
+  color: black;
 }
 .category-area .category-misson .misson-item a:hover {
-  color: #222;
-  background: #fff;
-  border-color: #fff;
+  color: #ffffff;
+  background: #000000;
+  border-color: #000000;
 }
 .category-area .category-misson .misson-item a:hover::before {
   border-color: #000000;
@@ -5487,8 +5488,8 @@ p {
   }
 }
 .category-area .category-goals .goals-item a {
-  background: #fff;
-  color: #222;
+  background: #000000;
+  color: #ffffff;
   border-color: #fff;
 }
 .category-area .category-goals .goals-item a::before {
@@ -5499,8 +5500,8 @@ p {
 }
 .category-area .category-goals .goals-item a:hover {
   color: #fff;
-  background: #fc5546;
-  border-color: #fc5546;
+  background: #000000;
+  border-color: #ffffff;
 }
 .category-area .category-goals .goals-item a:hover::before {
   border-color: #fff;
