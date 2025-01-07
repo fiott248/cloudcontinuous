@@ -1,7 +1,7 @@
 title: "CloudContinuous | Home"
 email: "tech@cloudcontinuous.com"
 description: >- # this means to ignore newlines until "baseurl:"
- Cloud Continuous is a leading software development agency specializing in custom software solutions for the medical, manufacturing, and energy industries. Our expertise includes machine learning and AI technologies, allowing us to create innovative and tailored solutions for a wide range of industries. Contact us to learn more about our services and how we can help your business succeed. 
+ Cloud Continuous is a leading data agency with our proven system; Define, Build & Leverage data into insights, So that the company can make smarter decisions, innovate, and grow exponentially.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://cloudcontinuous.com" # the base hostname & protocol for your site, e.g. http://example.com or  https://tradejk.netlify.com
 facebook_url: ""
