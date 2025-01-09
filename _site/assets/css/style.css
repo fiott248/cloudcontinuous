@@ -19,6 +19,15 @@
 	04. Footer
 
 -----------------------------------------------------------------------------------*/
+
+banner-clients-hero{
+  width: 300px;
+  height: 200px;
+  background: red;
+}
+
+
+
 /*===========================
     1. COMMON css 
 ===========================*/
@@ -1797,7 +1806,7 @@ p {
   padding-left: 38px;
   font-size: 15px;
   font-weight: 600;
-  color: #000000;
+  /* color: #000000; */
 }
 @media (max-width: 767px) {
   .about-area .about-content ul li:last-child a {
@@ -4179,12 +4188,13 @@ p {
 }
 
 .brand-area {
+  /* background-color: #000; */
   /* padding-top: 128px; */
-  padding-bottom: 128px;
+  /* padding-bottom: 128px; */
 }
 .brand-area .brand-item img {
   display: inline-block;
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
 }
 .brand-area.about-brand {
   background: #eef3f9;

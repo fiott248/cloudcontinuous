@@ -1,10 +1,8 @@
 #Please use the main menu items under the "text"
 - text: Referral
   url: /referral-program
-- text: Home
-  url: /
-- text: What we Do
-  url: /#services
+- text: Our System
+  url: https://start.cloudcontinuous.com
   submenu:
   - text: Define Data Strategy
     url: /define-data-strategy
