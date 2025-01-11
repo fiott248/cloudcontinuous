@@ -2527,6 +2527,14 @@ p {
   z-index: 10;
   border: 1px solid #000000;
 }
+.project-case-area .project-case-item .project-case-thumb-1 {
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+  border: 2px solid #ffffff;
+}
+
 .project-case-area .project-case-item .project-case-thumb::after {
   position: absolute;
   content: "";
@@ -2538,6 +2546,19 @@ p {
   border-left: 120px solid transparent;
   z-index: 1;
 }
+
+.project-case-area .project-case-item .project-case-thumb-1::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 120px solid #ffffff;
+  border-left: 120px solid transparent;
+  z-index: 1;
+}
+
 .project-case-area .project-case-item .project-case-thumb img {
   width: 100%;
   transform: scale(1);
@@ -2555,15 +2576,23 @@ p {
   font-size: 35px;
   z-index: 2;
 }
+.project-case-area .project-case-item .project-case-thumb-1 i {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  color: #000000;
+  font-size: 35px;
+  z-index: 2;
+}
 .project-case-area .project-case-item .project-case-thumb p {
   font-weight: 500;
-  color: #000000;
+  color: #ffffff;
   padding-top: 8px;
   padding-bottom: 19px;
 }
 .project-case-area .project-case-item .project-case-content .title {
   font-size: 24px;
-  color: #222;
+  color: #ffffff;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
@@ -2572,12 +2601,12 @@ p {
 }
 .project-case-area .project-case-item .project-case-content span {
   font-weight: 500;
-  color: #000000;
+  color: #ffffff;
   padding-top: 8px;
   padding-bottom: 19px;
 }
 .project-case-area .project-case-item .project-case-content p {
-  color: #000000;
+  color: #ffffff;
   padding-top: 8px;
   padding-bottom: 19px;
 }
@@ -2594,7 +2623,7 @@ p {
 .project-case-area .project-case-item .project-case-content a {
   font-size: 15px;
   font-weight: 600;
-  color: #000000;
+  color: #ffffff;
   padding-top: 18px;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
@@ -2603,7 +2632,7 @@ p {
   transition: all 0.3s ease-out 0s;
 }
 .project-case-area .project-case-item .project-case-content a:hover {
-  color: #000000;
+  color: #ffffff;
 }
 .project-case-area .project-case-item .project-case-content a i {
   padding-left: 6px;
@@ -2612,12 +2641,11 @@ p {
   transform: scale(1.1);
 }
 .project-case-area .project-case-item:hover .project-case-content .title {
-  color: #000000;
+  color: #ffffff;
 }
 .project-case-area.project-home {
   padding-top: 117px;
-  margin-top: 50px;
-  margin-bottom: 100px;
+  padding-bottom: 70px;
 }
 
 /*===========================
@@ -4045,6 +4073,17 @@ p {
   /* margin-bottom: 130px; */
   position: relative;
   margin-top: -100px;
+  z-index: 11;
+}
+.newaletter-area {
+  /* margin-bottom: 130px; */
+  position: relative;
+  margin-top: -100px;
+  z-index: 11;
+}
+.newaletter-area-1 {
+  /* margin-bottom: 130px; */
+  position: relative;
   z-index: 11;
 }
 @media (max-width: 767px) {
@@ -7497,7 +7536,8 @@ p {
     22.CONTACT css 
 ===========================*/
 .contact-info-area .contact-info-border {
-  border: 10px solid #f1f1f1;
+  border: 6px solid #000;
+  border-radius: 12px;
   margin-bottom: 50px;
 }
 .contact-info-area .contact-info-border .contact-info-item {

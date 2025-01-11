@@ -2,85 +2,153 @@
 layout: default
 ---
 
-<section class="requst-quote-area bg_cover pt-115" style="background-image: url({{page.post_image}}); margin-top: 115px">
+<!-- <section class="requst-quote-area pt-115" style=" margin-top: 115px"></section>
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="requst-content text-center">
-                    <h1 class="title">{{page.title}}</h1>
-                    <p>{{page.small_desc}}</p>
+                    <h1 class="title"></h1>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<div class="newaletter-area-1 pt-120"  style="background-color: #000000;">
+    <div class="container">
+        <img src="{{page.second_image}}"  style="border-radius: 20px;" alt="client">
+    </div>
+</div>
+
+<section class="about-area pt-50 pb-30" style="background-color: #000000;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="about-thumb text-center">
+                    <h2 class="title" style="color: #ffffff; font-size: 90px;">{{page.client}}</h2>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-content">  
+                    <h1 class="title"><span style="color: rgb(255, 255, 255);">{{page.title}}</span></h1>
+                    <p style="color: rgb(255, 255, 255);">
+                        {{page.description}}</p>
+
                 </div>
             </div>
         </div>
     </div>
 </section>
-<div class="newaletter-area">
-    <div class="container">
-        <img src="{{page.second_image}}" alt="team">
-    </div>
-</div>
 
-
-<section class="project-case-area project-home pt-100">
+<section class="project-case-area project-home pt-70" style="background-color: #000000;">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-6">
                 <div class="section-title text-center">
-                    <h2 class="title"><span>Key Project Metrics<span></span></span></h2>
-                    <p>{{page.metrics_desc}}</p>
+                    <h2 class="title" style="color: #ffffff;">Key Impact</h2>
                 </div>
             </div>
         </div>
         <div class="row justify-content-center">
+            {% for item in page.impact %}
             <div class="col-lg-4 col-md-7 col-sm-9">
                 <div class="project-case-item mt-30">
-                    <div class="project-case-thumb" style="width: 350px;height: 300px;display: flex;align-items: center;flex-direction: column;align-content: space-around; padding: 50px">
-                        <h3 class="title">Technologies</h3>
-                        {% for item in page.technology %}
-                        <p>{{ item }}</p>
-                    {% endfor %}
-                        <i class="fal fa-retweet"></i>
+                    
+                    <div class="project-case-thumb-1" style="width: 350px;height: 190px;display: flex;align-items: center;flex-direction: column;align-content: space-around; padding: 50px">
+                        <h3 class="title" style="color: #ffffff;">{{ item.text }}</h3>
+                        <i class="fa {{ item.icon }}"></i>
                     </div>
+                    
                 </div>
             </div>
-            <div class="col-lg-4 col-md-7 col-sm-9">
-                <div class="project-case-item mt-30">
-                    <div class="project-case-thumb" style="width: 350px;height: 300px;display: flex;align-items: center;flex-direction: column;align-content: space-around; padding: 50px">
-                        <h3 class="title">Integrations</h3>
-                        {% for item in page.integ %}
-                        <p>{{ item }}</p>
-                    {% endfor %}
-                        <i class="fal fa-award"></i>
-                    </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<section class="about-area pt-10 pb-20" style="background-color: #000000;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="about-thumb text-center">
+                    <h3 class="title" style="color: #ffffff;">Client overview</h3>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-7 col-sm-9">
-                <div class="project-case-item mt-30">
-                    <div class="project-case-thumb" style="width: 350px;height: 300px;display: flex;align-items: center;flex-direction: column;align-content: space-around; padding: 50px">
-                        <h3 class="title">Team Members</h3>
-                        {% for item in page.members %}
-                        <p>{{ item }}</p>
-                    {% endfor %}
-                        <i class="fal fa-retweet"></i>
-                    </div>
+            <div class="col-lg-6">
+                <div class="about-content">  
+                    <p style="color: rgb(255, 255, 255);">
+                        {{page.client_overview}}</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<section class="blog-standard-area blog-details-area pt-100 pb-130">
+<section class="about-area pt-20 pb-20" style="background-color: #000000;">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-14">
-                <div class="blog-standard mt-30">
-                    <div class="blog-item">
-                        <div class="blog-content white-bg ">
-                         {{content}}
-                        </div>
-                    </div>
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="about-thumb text-center">>              
+                    <h3 class="title" style="color: #ffffff;">The challenge</h3>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-content">
+                    <p style="color: rgb(255, 255, 255);">{{page.challenge}}</p>
                 </div>
             </div>
         </div>
     </div>
-</section> 
+</section>
+<section class="about-area pt-20 pb-60" style="background-color: #000000;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="about-thumb text-center">
+                    <h3 class="title" style="color: #ffffff;">The outcome</h3>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-content">
+                    <p style="color: rgb(255, 255, 255);">{{page.outcome}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="about-area pt-20 pb-0" style="background-color: #000000;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="section-title text-center">
+                    <h3 class="title" style="color: #ffffff;">The solution</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% for item in page.solution %}
+<section class="about-area pt-20 pb-40" style="background-color: #000000;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="about-thumb text-center">
+                    <img src="{{ item.image}}">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-content">  
+                    <h1 class="title"><span style="color: rgb(255, 255, 255);">{{item.step}}</span></h1>
+                    <p style="color: rgb(255, 255, 255);">
+                        {{item.description}}</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endfor %}
+
+
+{% include call_to_action.html %}
+
 
