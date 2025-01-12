@@ -2648,6 +2648,11 @@ p {
   padding-bottom: 70px;
 }
 
+.project-case-area.project-home-1 {
+  padding-top: 200px;
+  /* padding-bottom: 70px; */
+}
+
 /*===========================
     7    .TEAM css 
 ===========================*/
@@ -3567,6 +3572,7 @@ p {
   position: relative;
   overflow: hidden;
   z-index: 10;
+  border-radius: 12px;
 }
 .blog-area .blog-item .blog-thumb img {
   width: 100%;
@@ -3584,8 +3590,8 @@ p {
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(1, 84, 247, 0.6);
-  z-index: 5;
+  /* background-color: rgba(1, 84, 247, 0.6); */
+  /* z-index: 5; */
 }
 .blog-area .blog-item .blog-content {
   padding-top: 33px;

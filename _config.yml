@@ -110,6 +110,9 @@ feed:
       path: "/index.xml"
 
 collections:
+  cases:
+    output: true
+    permalink: '/cases/:title/'
   insights:
     output: true
     permalink: /:categories/:year/:month/:day/:title/

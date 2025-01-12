@@ -7,7 +7,7 @@ tags: technologies
 categories: [case_studies]
 author: "Daniel Fiott"
 permalink: /cases/wolt-from-vague-spending-to-crystal-clear-analytics:output_ext
-second_image: "/assets/images/wolt-case.webp"
+case_image: "/assets/images/wolt-case.webp"
 impact: 
   - text: Improved Cost Visibility
     icon: fa-dollar-sign
