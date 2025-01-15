@@ -1,0 +1,42 @@
+---
+layout: default_without_footer
+---
+    <section class="scroll-layout pt-120">
+        <div class="left-column" id="imageColumn" style="background-color: black; padding-top: 180px; padding-left: 60px; padding-right: 60px; padding-bottom: 60px;">
+            <img src="{{ page.sections[0].image }}" alt="Image" style="width: 100%; height: 80%; object-fit: cover; border-radius: 40px;">
+        </div>
+    <div class="right-column"  style="background-color: rgb(0, 0, 0); padding: 60px;">
+        {% for section in page.sections %}
+        <div class="content-section" data-image="{{ section.image }}">
+            <h1 style="color: white;">{{ section.title }}</h1>
+            <p>{{ section.description }}</p>
+            <br />
+            {% for item in section.tasks %}
+            <ul class="pagination" style="color: white; font-size: 16px;">
+                <li style="display: list-item; list-style-type: circle; list-style-position: inside;">{{item}}</li>
+            </ul>
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </div>
+    <script>
+const imageColumn = document.getElementById('imageColumn');
+const imageElement = imageColumn.querySelector('img');
+const sections = document.querySelectorAll('.content-section');
+
+window.addEventListener('scroll', () => {
+        sections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            // Adjust the fraction of the viewport height to trigger the change earlier or later
+            const triggerPoint = window.innerHeight * 0.7; // Adjust the multiplier as needed
+            if (rect.top <= triggerPoint && rect.bottom >= triggerPoint) {
+                const newImage = section.dataset.image;
+                if (imageElement.src !== newImage) {
+                    imageElement.src = newImage;
+                }
+            }
+        });
+    });
+    </script>
+</section>
+

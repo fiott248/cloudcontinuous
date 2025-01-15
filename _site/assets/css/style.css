@@ -671,7 +671,7 @@ p {
   position: absolute;
   left: 0;
   top: 110%;
-  width: 400px;
+  width: 300px;
   background-color: #fff;
   opacity: 0;
   visibility: hidden;
@@ -1119,7 +1119,7 @@ p {
   font-size: 20px;
   font-weight: 300;
   color: #fff;
-  line-height: 20px;
+  line-height: 30px;
 }
 .banner-area .banner-content .title {
   font-size: 65px;
@@ -8066,4 +8066,52 @@ a.feature {
 
 .feature .js-tilt-glare {
   border-radius: 0.625rem;
+}
+
+.scroll-layout .left-column {
+  width: 60%;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s ease-in-out;
+}
+.scroll-layout .right-column {
+  margin-left:60%;
+  padding: 20px;
+  width: 40%;
+}
+.scroll-layout .right-column h1  {
+  /* padding-top: 40px; */
+  padding-bottom: 20px;
+}
+
+.scroll-layout .content-section {
+  height: 100vh;
+  padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .scroll-layout .left-column {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+  }
+
+  .scroll-layout .right-column {
+    margin-left: 0;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .scroll-layout .right-column h1 {
+    padding-bottom: 10px;
+  }
+
+  .scroll-layout .content-section {
+    height: auto;
+    padding-top: 10px;
+  }
 }
