@@ -1,6 +1,27 @@
 <!--====== BANNER PART START ======-->
 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const video = document.querySelector('.home-hero__video .home-hero__video--bg');
+      const videoSrc = video.getAttribute('src');
+      
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              video.src = videoSrc;
+              observer.unobserve(video);
+            }
+          });
+        });
+        observer.observe(video);
+      } else {
+        // Fallback for browsers without IntersectionObserver
+        video.src = videoSrc;
+      }
+    });
+  </script>
 <section class="banner-area">
 <div class="banner-bg">
     <video preload="auto" aria-hidden="true" class="home-hero__video home-hero__video--bg" autoplay="" loop="" muted="" playsinline="" poster="" data-bg-video-player="">
