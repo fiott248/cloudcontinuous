@@ -32,6 +32,7 @@ plugins:
   - jekyll-coffeescript
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-minifier
 sass:
     sass_dir: assets/scss
     style: compressed
