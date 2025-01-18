@@ -1083,7 +1083,7 @@ p {
   top: 0;
   height: 100%;
   width: 50%;
-  background-image: url(../images/non-video-image.png);
+  /* background-image: url(../images/non-video-image.png); */
   background-size: cover;
   background-position: right center;
   background-repeat: no-repeat;
@@ -8113,5 +8113,20 @@ a.feature {
   .scroll-layout .content-section {
     height: auto;
     padding-top: 10px;
+  }
+}
+.hero-image-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* For screens 768px and below (e.g., mobile devices) */
+  .home-hero__video {
+      display: none; /* Hide the video */
+  }
+
+  .hero-image-mobile {
+      display: block; /* Show the image */
+      width: 100%;    /* Make sure the image is responsive */
   }
 }

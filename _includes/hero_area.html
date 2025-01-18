@@ -2,25 +2,25 @@
 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const video = document.querySelector('.home-hero__video .home-hero__video--bg');
-      const videoSrc = video.getAttribute('src');
+    // document.addEventListener("DOMContentLoaded", function() {
+    //   const video = document.querySelector('.home-hero__video .home-hero__video--bg');
+    //   const videoSrc = video.getAttribute('src');
       
-      if ('IntersectionObserver' in window) {
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              video.src = videoSrc;
-              observer.unobserve(video);
-            }
-          });
-        });
-        observer.observe(video);
-      } else {
-        // Fallback for browsers without IntersectionObserver
-        video.src = videoSrc;
-      }
-    });
+    //   if ('IntersectionObserver' in window) {
+    //     const observer = new IntersectionObserver((entries) => {
+    //       entries.forEach(entry => {
+    //         if (entry.isIntersecting) {
+    //           video.src = videoSrc;
+    //           observer.unobserve(video);
+    //         }
+    //       });
+    //     });
+    //     observer.observe(video);
+    //   } else {
+    //     // Fallback for browsers without IntersectionObserver
+    //     video.src = videoSrc;
+    //   }
+    // });
     document.addEventListener("DOMContentLoaded", function() {
     // Mapping of `h` values to predetermined titles and subtitles
     const heroContent = {
@@ -62,6 +62,8 @@
         <source type="video/webm" src="../assets/video/cloudcontinuous-home.mp4">
         <source src="../assets/video/cloudcontinuous-home.mp4" type="video/mp4">
       </video>
+      <!-- Mobile Image -->
+    <img src="../assets/images/non-video-image.png" alt="Hero Image" class="hero-image-mobile" />
     <div class="container">
         <!-- <div class="row"> -->
             <div class="col-lg-12 col-md-9">
