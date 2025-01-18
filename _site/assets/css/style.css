@@ -33,7 +33,7 @@ banner-clients-hero{
 ===========================*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,800,900&display=swap");
 body {
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   font-weight: normal;
   font-style: normal;
   color: #000000;
@@ -77,10 +77,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   font-weight: 600;
   color: #ffffff
-  margin: 0px;
 }
 
 h1 {
@@ -1141,8 +1140,21 @@ p {
 }
 @media (max-width: 767px) {
   .banner-area .banner-content .title {
-    font-size: 29px;
-    line-height: 40px;
+    font-size: 39px;
+    line-height: 50px;
+    text-align: center;
+  }
+  .banner-area .banner-content .subtitle {
+    font-size: 19px;
+    text-align: center;
+  }
+  .banner-area .banner-content ul {
+    list-style-type: none; /* Removes default bullet points */
+    padding: 0;            /* Removes default padding */
+    margin: 0;             /* Removes default margin */
+    display: flex;         /* Use flexbox for alignment */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center;   /* Center the list items */
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -1212,6 +1224,7 @@ p {
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .banner-area .banner-content ul li {
     margin-top: 0px;
+    padding: 10px;
   }
 }
 .banner-area .banner-shape-1 {
@@ -1302,7 +1315,13 @@ p {
   left: 0;
 }
 @media (max-width: 767px) {
-  .banner-area.page-title .banner-shape-1 {
+  /* .banner-area.page-title .banner-shape-1 {
+    display: none;
+  } */
+  .banner-shape-1 {
+    display: none;
+  }
+  .banner-shape-2 {
     display: none;
   }
 }
@@ -7820,7 +7839,8 @@ p {
 .why .comparison__row-title {
 	margin-right: 1rem;
 	text-align: right;
-	font-size: 18px;
+	font-size: 16px;
+  color: #000;
 }
 
 .why .comparison__col--cc .comparison__cell:nth-child(2n) {
@@ -7882,6 +7902,12 @@ p {
     justify-content: center;
     padding: 0 1rem;
     height: 80px;
+}
+
+@media (max-width: 576px) { 
+  .why {
+  display: None
+}
 }
 
 @media (min-width: 1200px) .why .comparison__col--cc {
@@ -8121,7 +8147,7 @@ a.feature {
 
 @media (max-width: 768px) {
   /* For screens 768px and below (e.g., mobile devices) */
-  .home-hero__video {
+  .hero_review_tag {
       display: none; /* Hide the video */
   }
 

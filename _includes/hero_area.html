@@ -1,26 +1,25 @@
 <!--====== BANNER PART START ======-->
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 <script>
-    // document.addEventListener("DOMContentLoaded", function() {
-    //   const video = document.querySelector('.home-hero__video .home-hero__video--bg');
-    //   const videoSrc = video.getAttribute('src');
-      
-    //   if ('IntersectionObserver' in window) {
-    //     const observer = new IntersectionObserver((entries) => {
-    //       entries.forEach(entry => {
-    //         if (entry.isIntersecting) {
-    //           video.src = videoSrc;
-    //           observer.unobserve(video);
-    //         }
-    //       });
-    //     });
-    //     observer.observe(video);
-    //   } else {
-    //     // Fallback for browsers without IntersectionObserver
-    //     video.src = videoSrc;
-    //   }
-    // });
+    document.addEventListener("DOMContentLoaded", function() {
+    // Function to check if the device is mobile
+    function isMobileScreen() {
+      return window.innerWidth <= 768;
+    }
+
+    // If the device is mobile, change the video source
+    if (isMobileScreen()) {
+      const videoSourceWebM = document.getElementById('video-source-webm');
+      const videoSourceMP4 = document.getElementById('video-source-mp4');
+
+      // Update the src attributes for mobile-optimized videos
+      videoSourceWebM.src = '../assets/video/cc-home-mobile.mp4';
+      videoSourceMP4.src = '../assets/video/cc-home-mobile.mp4';
+
+      // Reload the video element to apply the new sources
+      const videoElement = videoSourceWebM.parentElement;
+      videoElement.load();
+    }
+  });
     document.addEventListener("DOMContentLoaded", function() {
     // Mapping of `h` values to predetermined titles and subtitles
     const heroContent = {
@@ -59,11 +58,9 @@
 <section class="banner-area">
 <div class="banner-bg">
     <video preload="auto" aria-hidden="true" class="home-hero__video home-hero__video--bg" autoplay="" loop="" muted="" playsinline="" poster="" data-bg-video-player="">
-        <source type="video/webm" src="../assets/video/cloudcontinuous-home.mp4">
-        <source src="../assets/video/cloudcontinuous-home.mp4" type="video/mp4">
+        <source id="video-source-webm" type="video/webm" src="../assets/video/cloudcontinuous-home.mp4">
+        <source id="video-source-mp4" src="../assets/video/cloudcontinuous-home.mp4" type="video/mp4">
       </video>
-      <!-- Mobile Image -->
-    <img src="../assets/images/non-video-image.png" alt="Hero Image" class="hero-image-mobile" />
     <div class="container">
         <!-- <div class="row"> -->
             <div class="col-lg-12 col-md-9">
@@ -78,8 +75,8 @@
                         <li><a class="main-btn main-btn-2" onclick="Calendly.initPopupWidget({url: 'https://api.leadconnectorhq.com/widget/booking/spfDg8KL3l2J6ZbKaBBV'});return false;">3. Book a Call </a></li>
                     </ul>
                     <br/>
-                    <img class="wow" src="assets/images/capterra-review-badge.png" alt="capterra" style="height: 60px;">
-                    <img class="wow" src="assets/images/Hyperview-4.7-Stars-Badge.png" alt="g2" style="height: 60px;"> 
+                    <img class="wow hero_review_tag" src="assets/images/capterra-review-badge.png" alt="capterra" style="height: 60px;">
+                    <img class="wo hero_review_tag" src="assets/images/Hyperview-4.7-Stars-Badge.png" alt="g2" style="height: 60px;"> 
                     <br/>
                     <img src="/assets/images/trusted-by.png" width="456" height="56" style="margin-top: 20px; border: 1px solid white;" />
                 </div>
