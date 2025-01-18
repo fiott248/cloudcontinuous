@@ -21,6 +21,40 @@
         video.src = videoSrc;
       }
     });
+    document.addEventListener("DOMContentLoaded", function() {
+    // Mapping of `h` values to predetermined titles and subtitles
+    const heroContent = {
+      '1': {
+        title: 'Your Data<br> <span>Holds <mark style="background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(152,51,255,1) 0%, rgba(152,51,255,0.3743872549019608) 100%); border-radius: 0.5em 0; padding: .5rem; color: white;">Power</mark></span>',
+        subtitle: 'We help you use it to make Better Decisions <br> & Intelligently Scale Your Business'
+      },
+      '2': {
+        title: 'Explore Our Insights<br> <span>Unlock <mark style="background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,165,0,1) 0%, rgba(255,165,0,0.5) 100%); border-radius: 0.5em 0; padding: .5rem; color: white;">Opportunities</mark></span>',
+        subtitle: 'Gain new perspectives and strategies for growth.'
+      },
+      '3': {
+        title: 'Join the Revolution<br> <span>Lead with <mark style="background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,128,0,1) 0%, rgba(0,128,0,0.5) 100%); border-radius: 0.5em 0; padding: .5rem; color: white;">Innovation</mark></span>',
+        subtitle: 'Be at the forefront of technological advancements.'
+      },
+      '4': {
+        title: 'Empower Your Team<br> <span>Drive <mark style="background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,0,0,1) 0%, rgba(255,0,0,0.5) 100%); border-radius: 0.5em 0; padding: .5rem; color: white;">Success</mark></span>',
+        subtitle: 'Foster a culture of success and collaboration.'
+      }
+    };
+
+    // Get the URL query string
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+
+    // Get the 'h' parameter
+    const heroKey = urlParams.get('h');
+
+    // If 'h' parameter exists and is valid, update the hero title and subtitle
+    if (heroKey && heroContent[heroKey]) {
+      document.getElementById('hero-title').innerHTML = heroContent[heroKey].title;
+      document.getElementById('hero-subtitle').innerHTML = heroContent[heroKey].subtitle;
+    }
+  });
   </script>
 <section class="banner-area">
 <div class="banner-bg">
@@ -32,8 +66,8 @@
         <!-- <div class="row"> -->
             <div class="col-lg-12 col-md-9">
                 <div class="banner-content">
-                    <h1 class="title wow fadeInLeft" data-wow-duration="1.2s" data-wow-delay="1s">Your Data<br> <span>Holds <mark style="background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(152,51,255,1) 0%, rgba(152,51,255,0.3743872549019608) 100%); border-radius: 0.5em 0; padding: .5rem; color: white;">Power</mark></span></h1>
-                    <span class="subtitle wow" data-wow-duration="1.2s" data-wow-delay="1.5s">We help you use it to make Better Decisions <br >& Intelligently Scale Your Business</span>
+                    <h1 id="hero-title" class="title wow fadeInLeft" data-wow-duration="1.2s" data-wow-delay="1s">Your Data<br> <span>Holds <mark style="background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(152,51,255,1) 0%, rgba(152,51,255,0.3743872549019608) 100%); border-radius: 0.5em 0; padding: .5rem; color: white;">Power</mark></span></h1>
+                    <span id="hero-subtitle" class="subtitle wow" data-wow-duration="1.2s" data-wow-delay="1.5s">We help you use it to make Better Decisions <br >& Intelligently Scale Your Business</span>
                     <!-- <p class="wow" data-wow-duration="1.2s" data-wow-delay="2s">Most companies underestimate the value of the data they can collect. We have a proven process that helps our clients DEFINE their Data Strategy, BUILD Scalable Technology & LEVERAGE Data-Driven Insights so they can innovate and scale with certainty.</p> -->
                     <br /> 
                     <ul class="wow" data-wow-duration="1.2s" data-wow-delay="2.6s" style="padding-top: 20px;">
