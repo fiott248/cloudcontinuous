@@ -1094,7 +1094,7 @@ p {
   }
 }
 .banner-area .banner-bg {
-  height: 850px;
+  height: 800px;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -1147,6 +1147,7 @@ p {
   .banner-area .banner-content .subtitle {
     font-size: 19px;
     text-align: center;
+    padding-left: 25%;
   }
   .banner-area .banner-content ul {
     list-style-type: none; /* Removes default bullet points */
@@ -1181,7 +1182,7 @@ p {
   font-size: 30px;
   text-transform: capitalize;
   letter-spacing: 1px;
-  padding-top: 15px;
+  padding-top: 10px;
   font-weight: 300;
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -1203,11 +1204,20 @@ p {
   font-weight: 500;
   line-height: 26px;
   padding-right: 35px;
-  padding-top: 25px;
-  padding-bottom: 30px;
+  padding-top: 15px;
+  /* padding-bottom: 30px; */
+}
+.banner-area .banner-box-buttom {
+  height: 90px;
+}
+@media (max-width: 767px) {
+  .banner-area .banner-box-buttom {
+    display: none;
+  }
 }
 @media (max-width: 767px) {
   .banner-area .banner-content p {
+    text-align: center;
     padding-right: 0;
     font-size: 15px;
   }
@@ -1226,6 +1236,20 @@ p {
     margin-top: 0px;
     padding: 10px;
   }
+}
+.banner-area .banner-right-side {
+  padding-top: 100px;
+  margin-left: 100px;
+  width: 200px;
+}
+.banner-area .banner-right-side img {
+  transition: all .2s ease-in-out;
+}
+.banner-area .banner-right-side img:hover {
+  transform: scale(1.1);
+}
+.banner-area .video-banner-text {
+  padding-left: 140px;
 }
 .banner-area .banner-shape-1 {
   height: 150px;
@@ -1256,6 +1280,15 @@ p {
 @media (max-width: 767px) {
   .banner-area.page-title {
     background-position: 66%;
+  }
+  .banner-area .banner-right-side {
+    display: none;
+  }
+  .banner-area .banner-right-side img {
+    display: none;
+  }
+  .banner-area .video-banner-text {
+    padding-left: 35%;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
