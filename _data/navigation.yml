@@ -2,7 +2,7 @@
 - text: Referral
   url: /referral-program
 - text: Our System
-  url: https://start.cloudcontinuous.com
+  url: /#model
   submenu:
   - text: Define Data Strategy
     url: /define-data-strategy
