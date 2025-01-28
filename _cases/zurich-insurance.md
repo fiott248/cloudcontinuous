@@ -1,36 +1,37 @@
 ---
 layout: case-study
-title: "From vague spending to crystal clear analytics"
-client: "Wolt"
-description: "How We Helped Wolt go from vague spending in software, SAAS, Infra and more to detailed clear understanding on each piece of software and how they an reduce cost and improve enhance decision-making"
+title: "From unaware inefficiencies to clear operations"
+client: "Zurich Insurance"
+description: "How We Helped Zurich Insurance Uncover Cloud Inefficiencies, Slash Costs, and Enhance Decision-Making with Optimized Processes in their Cloud Solutions"
 tags: technologies
 categories: [case_studies]
 author: "Daniel Fiott"
-permalink: /cases/wolt-from-vague-spending-to-crystal-clear-analytics:output_ext
-case_image: "/assets/images/wolt-case.webp"
+permalink: /cases/zurich-from-unaware-inefficiencies-to-clear-operations:output_ext
+case_image: "/assets/images/zurich-insurnance.png"
 impact: 
-  - text: Improved Cost Visibility
+  - text: Improved Operational Efficiency
     icon: fa-dollar-sign
-  - text: Reduced Operational Cost
+  - text: Reduction in Cloud Cost
     icon: fa-arrow-down
-  - text: Enhanced Decision-Making
+  - text: Improved Visibility
     icon: fa-chart-line
-client_overview: "Wolt was founded in 2014 in Helsinki Finland, the app-based company strives to connect local restaurants and merchants to customers who are seeking an easy-to-use delivery app service. Wolt’s platform makes it easy for customers to order whatever they need on one app, for merchants to make additional sales, and for couriers to make meaningful earnings flexibly. Apart from a restaurant delivery app, the company also opened its own grocery stores under the brand name ‘Wolt Market’. Today, Wolt successfully operates in 25 countries and over 300 cities worldwide."
+client_overview: "Zurich Insurance needs no introduction, they where founded in 1872, which today they are one of the largest Country's Insurer, with operations in Europe, North America, Latin America and Pacific Asia. As of 2021, the group is the world's 112th largest public company according to forbes Global 2000s list. Their services cover all types of Insurances and Assest management"
 solution:
-    - image: "/assets/images/defined-data.webp"
-      step: "Defined Strategy"
-      description: "We defined our data strategy by aligning business objectives with the outcome the strategy, ensuring that data supports such results. Our data architecture was designed to provide a scalable, flexible, and efficient framework, enabling seamless data flow across systems. To ensure data compliance and security, we implemented rigorous standards and protocols, adhering to industry regulations and safeguarding sensitive information"
+    - image: "/assets/images/azure-services-last.png"
+      step: "Assessment & Roadmap"
+      description: "To kick off the project, a detailed audit of Zurich Insurance's cloud environment was conducted using Azure Advisor and Azure Migrate. These tools provided insights into underutilized resources, misconfigurations, and inefficiencies across the infrastructure. Based on the findings, a comprehensive roadmap was developed, outlining actionable steps to enhance resource utilization and reduce costs. This initial phase set the foundation for achieving the desired optimization goals."
     - image: "/assets/images/elt-pipeline.png"
-      step: "ELT Development"
-      description: "We implemented an ELT solution to streamline data integration from multiple software vendors and SaaS providers. The solution involved setting up a cloud-based infrastructure on AWS, allowing for scalable and secure data extraction through API integrations. We automated the loading process into a centralized data warehouse, ensuring data consistency and availability"
-    - image: "/assets/images/data-platform.png"
-      step: "Data Platform and Infra"
-      description: "We Implemented a comprehensive data platform and infrastructure to support seamless data integration and analytics for various business needs. Leveraging AWS, we built a scalable architecture that enabled efficient data ingestion from multiple sources, including third-party vendors and internal systems. The infrastructure included a robust data lake for centralized storage and a data warehouse for structured analytics, ensuring high availability and security. Our solution incorporated automated ETL pipelines and real-time processing capabilities, reducing data latency and enhancing performance"
-    - image: "/assets/images/looker-dashboard.png"
-      step: "Dashboards"
-      description: "We designed and implemented an advanced dashboard solution to provide real-time insights and enhance data visualization across multiple departments. Utilizing a modern BI tool integrated with our data warehouse, we created interactive dashboards that aggregated data from various sources, including SaaS providers and internal systems. The dashboards featured customizable views, enabling stakeholders to track key performance metrics and trends effortlessly. Our solution also included automated data refresh schedules, ensuring that users had access to the most current information at all times. This improved visibility led to more informed decision-making and increased operational efficiency"
+      step: "CCM and Automation"
+      description: "To address the lack of spending visibility, Azure Cost Management and Billing were implemented to consolidate cost data across departments. Automation scripts using Azure Resource Manager (ARM) templates and auto-scaling were deployed to dynamically allocate resources based on workload demands. Additionally, non-critical resources were scheduled to shut down during off-peak hours, eliminating unnecessary expenses. This step significantly improved cost transparency and reduced wastage."
+    - image: "/assets/images/azure-monitor.png"
+      step: "Real-Time Monitoring"
+      description: "We designed and implemented an advanced azure dashboards to provide real-time insights and enhance data visualization across multiple departments. Utilizing azure Monitor tools integrated with Azure Data Warehousing tools, we created interactive dashboards that aggregated data from various sources. The dashboards featured customizable views, enabling varoius people to track key performance metrics and trends effortlessly. Our solution also included automated data refresh schedules, ensuring that users had access to the most current information at all times. This improved visibility led to more informed cloud resources  and increased operational efficiencies"
+    - image: "/assets/images/data-governance.jpg"
+      step: "Security & Compliance"
+      description: "To strengthen the cloud environment, Azure Security Center was utilized to monitor and address vulnerabilities. Azure Policy was implemented to enforce compliance standards and ensure best practices were followed across all resources. Regular vulnerability assessments and security audits were conducted to maintain a robust security posture. We also addressed other Security configurations such firewalls, other network devices and more. These measures minimized risks and ensured Zurich Insurance met industry compliance requirements."
 
-challenge: "After Wolt agreed to merge with DoorDash, the urgency of providing a clear understanding of all technology-related aspects increased. The company aimed to create a comprehensive data solution to cater to various stakeholders, including engineers, managers, shareholders, and the C-suite. The goal was clear: to track every expense so that informed actions could be taken."
-outcome: "over 4 Million Cost Savings Yearly:  The outcome of this was a significant reduction in operational costs, with a 20-28% decrease in expenses related to various software and services used across the company. This was achieved through enhanced awareness of service usage, enabling teams to identify inefficiencies and optimize resource allocation. The implementation of automated power-down processes in idle infrastructure and third-party software further contributed to cost savings. Additionally, the solution fostered improved decision-making and more effective cost management, ensuring a more streamlined and financially efficient operation."
+challenge: "Zurich Insurance had been running their software operations of physical servers in various data centers, The company aimed to migrate 90% of their services to Cloud, while also benefiting from various licensing cost and optimizations. such optimizations are hugly benefits for C-suite, managers & leaders within each department. the goal was clear: have the abilty to understand unutilized resources, understand possible cost optimizations and visualise such data"
+
+outcome: "By addressing inefficiencies in cloud processes and implementing cost-effective solutions, Zurich Insurance achieved substantial savings and operational improvements. These initiatives not only enhanced the company’s ability to manage its cloud infrastructure but also positioned it to adapt to evolving business needs with agility. This case study demonstrates the value of leveraging cloud-native tools and strategies to drive efficiency and cost-effectiveness in enterprise operations."
 
 ---
