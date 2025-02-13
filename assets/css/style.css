@@ -5514,6 +5514,51 @@ p {
   animation: ripple-white 1.3s linear infinite;
   border-radius: 50%;
 }
+.banner-area .category-thumb .play-overlay {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.banner-area .category-thumb .play-overlay a {
+  color: #fff;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  border: 2px solid #fff;
+  font-size: 20px;
+}
+.banner-area .category-thumb .play-overlay a::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #fff;
+  -webkit-animation: ripple-white 1s linear infinite;
+  -moz-animation: ripple-white 1s linear infinite;
+  -o-animation: ripple-white 1s linear infinite;
+  animation: ripple-white 1s linear infinite;
+  border-radius: 50%;
+}
+.banner-area .category-thumb .play-overlay a::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #fff;
+  -webkit-animation: ripple-white 1.3s linear infinite;
+  -moz-animation: ripple-white 1.3s linear infinite;
+  -o-animation: ripple-white 1.3s linear infinite;
+  animation: ripple-white 1.3s linear infinite;
+  border-radius: 50%;
+}
+
 .category-area .category-misson {
   height: 590px;
   background: #eceff3;
