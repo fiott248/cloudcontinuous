@@ -2,7 +2,7 @@
 - text: Referral
   url: /referral-program
 - text: Our System
-  url: /#model
+  url: /our-system
   submenu:
   - text: Define Data Strategy
     url: /define-data-strategy
