@@ -33,9 +33,19 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-minifier
+  - jekyll-toc
+
 sass:
     sass_dir: assets/scss
     style: compressed
+
+# TOC Settings
+toc:
+    min_level: 1
+    max_level: 3
+    list_class: toc
+    list_class: toc__list
+    sublist_class: toc__sublist
 
 ########################################################
 # Site configuration for the Jekyll 3 Pagination Gem
@@ -114,6 +124,9 @@ collections:
   cases:
     output: true
     permalink: '/cases/:title/'
+  blogs:
+    output: true
+    permalink: '/blog/:title/'
   insights:
     output: true
     permalink: /:categories/:year/:month/:day/:title/

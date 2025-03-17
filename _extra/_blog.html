@@ -1,41 +1,37 @@
 ---
 layout: default
-title: "Articles"
+header_image: "/assets/images/blog_header.jpg"
+title: "Blog"
+
 ---
+
+{% include page_header.html %}
+
 <!--====== BLOG PART START ======-->
 
-<section class="project-case-area project-home-1" style="background-color: #000000;">
-  <div class="container">
-      <div class="row justify-content-center">
-          <div class="col-lg-12">
-              <div class="section-title text-center">
-                  <h2 class="title"><span style="color: #ffffff; font-size: 100px;">Articles</span></h2>
-              </div>
-          </div>
-      </div>
-  </div>
-</section>
-
-<section class="blog-area blog-masonry" style="background-color: #000000;">
+<section class="blog-area blog-masonry">
 <div class="container">
     <div class="row justify-content-center">
-        {% for post in site.blogs %}
-        <div class="col-lg-6 col-md-7 col-sm-9">
+        {% for post in paginator.posts %}
+        <div class="col-lg-4 col-md-7 col-sm-9">
             <div class="blog-item mt-30">
-                {% if post.blog_image %}
+                {% if post.post_image %}
                 <div class="blog-thumb">
-                    <a href="{{post.url}}"><img src="{{post.blog_image}}" alt="{{post.title}}"></a>
+                    <a href="{{post.url}}"><img src="{{post.post_image}}" alt="{{post.title}}"></a>
                 </div>
                 {% endif %}
                 <div class="blog-content">
-                  <ul>
-                    {% if post.client %}
-                    <li style="color: #ffffff; font-size: 35px;">{{post.client}}</li>
-                    {% endif %}
-                </ul>
-                    <h3 class="title" style="color: #ffffff;"<a href="{{post.url}}">{{post.title}}</a></h3>
-                    <p style="color: #ffffff;">{{post.description | strip_html | truncatewords: "30"}}</p>
-                    <!-- <a href="{{post.url}}">View Details <i class="fal fa-long-arrow-right"></i></a> -->
+                    <ul>
+                        {% if post.author %}
+                        <li><i class="fal fa-user"></i> {{post.author}}</li>
+                        {% endif %}
+                        {% if post.date %}
+                         <li><i class="fal fa-calendar-alt"></i> {{post.date | date_to_long_string}}</li>
+                        {% endif %}
+                    </ul>
+                    <h3 class="title"><a href="{{post.url}}">{{post.title}}</a></h3>
+                    <p>{{post.excerpt | strip_html | truncatewords: "25"}}</p>
+                    <a href="{{post.url}}">View Details <i class="fal fa-long-arrow-right"></i></a>
                 </div>
             </div>
         </div>

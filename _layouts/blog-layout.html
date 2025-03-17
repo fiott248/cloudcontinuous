@@ -1,0 +1,92 @@
+---
+layout: default
+---
+
+<!-- <section class="requst-quote-area pt-115" style=" margin-top: 115px"></section>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="requst-content text-center">
+                    <h1 class="title"></h1>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<div class="newaletter-area-1 pt-120"  style="background-color: #000000;">
+    <div class="container">
+        <img src="{{page.blog_image}}"  style="border-radius: 20px;" alt="client">
+    </div>
+</div>
+
+<section class="about-area pt-20 pb-30" style="background-color: #000000;">
+    <div class="container">
+        <div class="row align-items-center pt-50">
+            <div class="col-lg-12">
+                <div class="about-thumb text-center">
+                    <h1 class="title" style="color: #ffffff; font-size: 30px;">{{page.title}}</h1>
+                </div>
+            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="blog-area pt-10 pb-20" style="background-color: #000000;">
+<div class="container">
+    <div class="row align-items-center">
+        <div class="col-lg-7">
+            <div class="blog-standard">
+                <div class="blog-item">
+                   <div class="blog-content">
+                    {{ content }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5" style="position: sticky; top: 110px; align-self: flex-start;">
+            {% toc %}
+            {% include sidecta.html %}            
+        </div>
+    </div>
+</div>
+</section>
+<section class="blog-area blog-masonry" style="background-color: #000000;">
+    <div class="container">
+        <div class="about-thumb text-center">
+            <h4 class="title" style="color: #ffffff; font-size: 30px;">Read Next</h4>
+        </div>
+        <div class="row justify-content-center">
+            {% assign recent_posts = site.blogs | where_exp: "post", "post.url != page.url" %}
+            {% assign count = 0 %}
+            {% for post in recent_posts reversed %}
+                {% if count < 2 %}
+            <div class="col-lg-6 col-md-7 col-sm-9">
+                <div class="blog-item mt-30">
+                    {% if post.blog_image %}
+                    <div class="blog-thumb">
+                        <a href="{{post.url}}"><img src="{{post.blog_image}}" alt="{{post.title}}"></a>
+                    </div>
+                    {% endif %}
+                    <div class="blog-content">
+                      <ul>
+                        {% if post.client %}
+                        <li style="color: #ffffff; font-size: 35px;">{{post.client}}</li>
+                        {% endif %}
+                    </ul>
+                        <h3 class="title" style="color: #ffffff;"<a href="{{post.url}}">{{post.title}}</a></h3>
+                        <p style="color: #ffffff;">{{post.description | strip_html | truncatewords: "30"}}</p>
+                        <!-- <a href="{{post.url}}">View Details <i class="fal fa-long-arrow-right"></i></a> -->
+                    </div>
+                </div>
+            </div>
+                {% assign count = count | plus: 1 %}
+            {% endif %}
+        {% endfor %}
+        </div>
+    </div>
+    </section>
+    {% include call_to_action.html %}
