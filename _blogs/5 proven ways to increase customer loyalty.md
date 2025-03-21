@@ -5,6 +5,7 @@ description: "Increase revenue and brand strength with just a 5% boost in custom
 categories: [customer_retention]
 author: "Daniel Fiott"
 toc: true
+published: true
 blog_image: "/assets/images/5-proven-ways.png"
 ---
 **Key Takeaways:**

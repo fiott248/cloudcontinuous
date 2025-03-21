@@ -5,6 +5,7 @@ description: "How to increase customer retention in 2025, learn about various fr
 categories: [customer_retention]
 author: "Daniel Fiott"
 toc: true
+published: true
 blog_image: "/assets/images/1564575721587.jpeg"
 ---
 

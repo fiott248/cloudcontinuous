@@ -5,6 +5,7 @@ description: "Maximize customer retention with tailored strategies focused on sa
 categories: [customer_retention]
 author: "Daniel Fiott"
 toc: true
+published: true
 blog_image: "/assets/images/5-strategies-customer-retention.png"
 ---
 
