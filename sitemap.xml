@@ -35,4 +35,12 @@ layout: null
     </url>
     {% endunless %}
   {% endfor %}
+   {% for post in site.cases %}  
+    <url>
+      <loc>{{ site.url }}{{ post.url }}</loc>
+      <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+  {% endfor %}
 </urlset>
