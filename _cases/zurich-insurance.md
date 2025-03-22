@@ -6,7 +6,7 @@ description: "How We Helped Zurich Insurance Uncover Cloud Inefficiencies, Slash
 tags: technologies
 categories: [case_studies]
 author: "Daniel Fiott"
-permalink: /cases/zurich-from-unaware-inefficiencies-to-clear-operations:output_ext
+permalink: /cases/zurich-from-unaware-inefficiencies-to-clear-operations
 case_image: "/assets/images/zurich-insurnance.png"
 impact: 
   - text: Improved Operational Efficiency

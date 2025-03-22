@@ -6,7 +6,7 @@ description: "How We Helped Wolt go from vague spending in software, SAAS, Infra
 tags: technologies
 categories: [case_studies]
 author: "Daniel Fiott"
-permalink: /cases/wolt-from-vague-spending-to-crystal-clear-analytics:output_ext
+permalink: /cases/wolt-from-vague-spending-to-crystal-clear-analytics
 case_image: "/assets/images/wolt-case.webp"
 impact: 
   - text: Improved Cost Visibility

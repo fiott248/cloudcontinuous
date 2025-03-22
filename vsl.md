@@ -7,6 +7,6 @@ background: ""
 tags: technologies
 categories: [case_studies]
 author: "Daniel Fiott"
-permalink: /vsl:output_ext
+permalink: /vsl
 second_image: "/assets/images/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg"
 ---
