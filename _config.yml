@@ -26,7 +26,7 @@ cover_image: "/assets/images/page-title-bg.jpg"
 markdown: kramdown
 theme: minima
 plugins:
-  - jekyll-feed
+  # - jekyll-feed
   - jekyll-paginate-v2
   - jekyll-archives
   - jekyll-coffeescript
