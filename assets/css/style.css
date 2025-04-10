@@ -1116,7 +1116,7 @@ p {
 }
 .banner-area .banner-content .subtitle {
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 700;
   color: #fff;
   line-height: 30px;
 }
@@ -1180,10 +1180,10 @@ p {
 }
 .banner-area .banner-content > span {
   font-size: 30px;
-  text-transform: capitalize;
-  letter-spacing: 1px;
+  /* text-transform: capitalize;
+  letter-spacing: 1px; */
   padding-top: 10px;
-  font-weight: 300;
+  font-weight: 700;
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .banner-area .banner-content > span {
