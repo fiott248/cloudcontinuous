@@ -7858,7 +7858,7 @@ p {
 .why .comparison {
 	margin-bottom: 4rem;
 	text-align: center;
-	font-size: 16px;
+	font-size: 12px;
 }
 
 .why .comparison__col {
@@ -8008,7 +8008,7 @@ p {
 	-webkit-box-shadow: 0 20px 70px -10px rgb(51 51 51 / 50%), 0 50px 100px 0 rgb(51 51 51 / 10%);
 	box-shadow: 0 20px 70px -10px rgb(51 51 51 / 50%), 0 50px 100px 0 rgb(51 51 51 / 10%);
 	color: #fff;
-	font-size: 18px;
+	font-size: 14px;
 }
 
 .why .comparison__col {
@@ -8361,4 +8361,68 @@ a.feature {
   border-radius: 6px;
   color: #4da6ff;
   overflow-x: auto;
+}
+
+.container-savings {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  max-width: 600px;
+  width: 100%;
+}
+.slider-group {
+  margin-bottom: 2rem;
+}
+.label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+.output {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.range1 {
+  -webkit-appearance: none;
+  appearance: none; 
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.range1::-webkit-slider-runnable-track {
+  height: 15px;
+  background: #ccc;
+  border-radius: 16px;
+}
+
+.range1::-moz-range-track {
+  height: 15px;
+  background: #ccc;
+  border-radius: 16px;
+}
+
+.range1::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none; 
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid #000;
+  box-shadow: -407px 0 0 400px #000;
+}
+
+.range1::-moz-range-thumb {
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #000;
+  box-shadow: -407px 0 0 400px #000;
 }

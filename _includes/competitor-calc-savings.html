@@ -1,0 +1,57 @@
+<!-- Paste the full HTML here -->
+<div class="container-savings">
+    <h3 style="color: black" class="title">Savings YoY</h3>
+    <p style="color: black; font-size: 12px;">Comparison to Braze Pricing (MAU)</p>
+    <div class="slider-group">
+      <div class="label">Years of Use: <span id="yearsOutput">1</span></div>
+      <input type="range" class="range1" id="years" min="1" max="10" value="3" />
+    </div>
+  
+    <div class="slider-group">
+      <div class="label">Number of Customers: <span id="customersOutput">10000</span></div>
+      <input type="range" class="range1" id="customers" min="10000" max="2000000" step="5000" value="20000" />
+    </div>
+  
+    <div class="output">
+      Estimated Savings: $<span id="savings">0</span>
+    </div>
+  </div>
+  <script>
+    const yearsSlider = document.getElementById('years');
+    const customersSlider = document.getElementById('customers');
+    const yearsOutput = document.getElementById('yearsOutput');
+    const customersOutput = document.getElementById('customersOutput');
+    const savingsOutput = document.getElementById('savings');
+  
+    function getBrazeCostPerCustomer(customerCount) {
+      if (customerCount <= 50000) return 2.00;
+      if (customerCount <= 100000) return 1.50;
+      if (customerCount <= 500000) return 1.25;
+      return 1.00;
+    }
+  
+    function getCloudContinuousCostPerCustomer() {
+      return 0.25; // Example rate for your agency
+    }
+  
+    function calculateSavings() {
+      const years = parseInt(yearsSlider.value);
+      const customers = parseInt(customersSlider.value);
+  
+      const brazeCost = getBrazeCostPerCustomer(customers);
+      const cloudCost = getCloudContinuousCostPerCustomer();
+  
+      const brazeTotal = years * customers * brazeCost;
+      const cloudTotal = years * customers * cloudCost;
+  
+      const savings = brazeTotal - cloudTotal;
+  
+      yearsOutput.textContent = years;
+      customersOutput.textContent = customers.toLocaleString();
+      savingsOutput.textContent = `${savings.toLocaleString(undefined, { maximumFractionDigits: 0 })}`;
+    }
+  
+    yearsSlider.addEventListener('input', calculateSavings);
+    customersSlider.addEventListener('input', calculateSavings);
+    calculateSavings();
+  </script>
