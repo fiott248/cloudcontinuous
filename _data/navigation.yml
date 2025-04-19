@@ -4,12 +4,12 @@
 - text: Our System
   url: /our-system
   submenu:
-  - text: Define Data Strategy
-    url: /define-data-strategy
-  - text: Build Scaleable Technology
-    url: /build-scalable-technology
-  - text: Leverage Data-Driven Insights
-    url: /leverage-data-driven-insights
+  - text: Connect & Centralize
+    url: /connect-and-centralize
+  - text: Segment & Strategize
+    url: /segment-and-strategize
+  - text: Automate & Engage
+    url: /automate-and-engage
 - text: Success Stories
   url: /cases
 - text: Blogs

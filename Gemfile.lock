@@ -276,6 +276,7 @@ DEPENDENCIES
   jekyll-coffeescript
   jekyll-feed (~> 0.12)
   jekyll-paginate-v2
+  jekyll-redirect-from
   jekyll-seo-tag
   jekyll-sitemap
   jekyll-tagging
