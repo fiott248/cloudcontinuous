@@ -1,7 +1,7 @@
 ---
 layout: blog-layout
 title: "How do you keep loyal customers in 2025?"
-description: Discover effective strategies for enhancing customer loyalty in 2025. Learn about the 4 C's and 3 R's of loyalty, the impact of personalization, and how to leverage social media to improve customer retention. Explore key metrics for measuring loyalty program success."
+description: "Discover effective strategies for enhancing customer loyalty in 2025. Learn about the 4 C's and 3 R's of loyalty, the impact of personalization, and how to leverage social media to improve customer retention. Explore key metrics for measuring loyalty program success."
 categories: [customer_retention]
 author: "Daniel Fiott"
 toc: true
