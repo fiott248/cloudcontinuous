@@ -1,6 +1,6 @@
 ---
 layout: scroll-layout
-title: Connect & Centralize
+title: Connect & Learn
 redirect_from:
 - /define-data-strategy
 sections:
@@ -14,18 +14,18 @@ sections:
       - Real-Time Data Syncing
       - Data Cleaning & Normalization
 
-  - title: Data Warehousing Architecture
-    description: Structure your data for performance, scalability, and insights. We design and implement cloud-based data warehouses tailored to your business needs—creating a single source of truth across your entire organization.
+  - title: Winning Strategy
+    description: A strategy built to keep your customers engaged, loyal, and coming back. We help retail brands build tailored loyalty programs, automated lifecycle journeys, and personalized experiences that deepen relationships and increase revenue.
     image: /assets/images/warehouse.png
     tasks:
-      - Data Modeling
-      - Warehouse Setup (e.g. BigQuery, Snowflake, PostgreSQL)
-      - Scalable Storage Architecture
-      - Access Control & Permissions
-      - Maintenance & Performance Optimization
+      - Loyalty Program Design
+      - Customer Lifecycle Campaigns
+      - Personalized Offers & Triggers
+      - Retention Playbooks
+      - Omnichannel Engagement
 
-  - title: Real-Time Dashboards & Visibility
-    description: Empower your teams with real-time insights. We create custom dashboards that turn raw data into clear, visual reports—giving you instant visibility into key metrics like churn risk, retention rate, and customer engagement.
+  - title: Clear Analytics
+    description: Empower your teams with dashboards that simplify the complex. We craft visual stories from your data so you can track performance, uncover patterns, and drive decisions—all with clarity and confidence.
     image: /assets/images/dashboards.png
     tasks:
       - Dashboard Design & Development

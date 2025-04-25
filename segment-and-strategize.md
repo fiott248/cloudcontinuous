@@ -24,7 +24,7 @@ sections:
       - Intent-Based Flow Mapping
       - Journey-to-Segment Alignment
 
-  - title: Loyalty Program Design
+  - title: Frictionless Loyalty Program
     description: Build programs that reward the right behavior. From point-based systems to tiered memberships, we help you structure loyalty programs that deepen engagement and increase repeat purchases.
     image: /assets/images/loyalty-programs.jpg
     tasks:

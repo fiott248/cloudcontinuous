@@ -4,12 +4,12 @@
 - text: Our System
   url: /our-system
   submenu:
-  - text: Connect & Centralize
-    url: /connect-and-centralize
+  - text: Connect & Learn
+    url: /connect-and-learn
   - text: Segment & Strategize
     url: /segment-and-strategize
-  - text: Automate & Engage
-    url: /automate-and-engage
+  - text: Enrich & Engage
+    url: /enrich-and-engage
 - text: Success Stories
   url: /cases
 - text: Blogs
