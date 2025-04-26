@@ -2,8 +2,10 @@
 - text: Referral
   url: /referral-program
 - text: Our System
-  url: /our-system
+  url: /Services
   submenu:
+  - text: AI Agents
+    url: /ai-agents
   - text: Connect & Learn
     url: /connect-and-learn
   - text: Segment & Strategize
